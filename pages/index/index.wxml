@@ -1,0 +1,80 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='p-header theme-bg color-white d-fl al-center'>
+    <button hover-class='hover-active'>
+      <icon class='iconfont icon-saoma d-fl al-center color-white'></icon>
+    </button>
+    <view class='search-box pr fl-1'>
+      <icon class='iconfont icon-magnifier color-gray'></icon>
+      <input class='search bg-white br-6 color-block' placeholder='搜索商户或者商品' placeholder-class='color-gray' confirm-type='search'></input>
+    </view>
+    <button hover-class='hover-active' class='message'>
+      <icon class='iconfont icon-xiaoxi d-fl al-center color-white pr'></icon>
+    </button>
+  </view>
+  <view class='main fl-1'>
+    <!-- 市场定位 -->
+    <view class="position-market bg-white mb-20 box-sh">
+      <view class='mb-26'>
+        <text class='iconfont icon-dingweiweizhi theme-color'></text>
+        <text class='mlr-10'>当前：</text>
+        <view class='dis-in theme-color theme-b-b pr' hover-class='hover-active'>雪苑农资批发市场</view>
+      </view>
+      <view class='card-rating mb-26 pr'>
+        <image src='/images/index/market.png'></image>
+        <view class='block-mask pd-lr-20'>
+          <text class='color-white'>市场信用评级：</text>
+          <view class='dis-in theme-color'>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-xingxingxianmiao"></text>
+          </view>
+        </view>
+      </view>
+      <view>地址：河南省商丘市梁园区货场商丘市长征医院东北</view>
+    </view>
+    <!-- 信用公告 -->
+    <view class='credit-announce bg-white mb-20 box-sh pd-lr-30 of-hidden'>
+      <view class='lh-72 text-center theme-color'>信用公告</view>
+      <view class='swiper mb-45 pr'>
+        <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}" bindchange="swiperChange">
+          <block wx:for="{{swiperData}}" wx:key="*this">
+            <swiper-item>
+              <image src="{{item}}" class="slide-image"/>
+            </swiper-item>
+          </block>
+        </swiper>
+        <view class='swiper-tips block-mask pd-lr-20 d-fl'>
+          <view class='color-white fl-1 text-ell'>{{swiperTips[swiperIndex]}}</view>
+          <view class='d-fl al-center'>
+            <text wx:for="{{swiperTips}}" wx:key="*this" class='indicator {{index === swiperIndex ? "on" : "" }}'></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='p-footer d-fl'>
+    <button hover-class='hover-active' data-index='0' bindtap="changeItem" class='d-fl fl-col {{footerActive === "0" ? "active" : "" }}'>
+      <text class='iconfont {{footerActive === "0" ? "icon-yemian-copy" : "icon-shouye" }}'></text>
+      <text>首页</text>
+    </button>
+    <button hover-class='hover-active' data-index='1' bindtap="changeItem" class='d-fl fl-col {{footerActive === "1" ? "active" : "" }}'>
+      <text class='iconfont {{footerActive === "1" ? "icon-shanghu" : "icon-shanghu1" }}'></text>
+      <text>商户</text>
+    </button>
+    <button hover-class='hover-active' data-index='2' bindtap="changeItem" class='d-fl fl-col yaoyiyao {{footerActive === "2" ? "active" : "" }}'>
+      <text class='iconfont icon-yaoyiyao'></text>
+      <text>摇一摇</text>
+    </button>
+    <button hover-class='hover-active' data-index='3' bindtap="changeItem" class='d-fl fl-col {{footerActive === "3" ? "active" : "" }}'>
+      <text class='iconfont {{footerActive === "3" ? "icon-gouwuche1" : "icon-gouwuche" }}'></text>
+      <text>菜篮子</text>
+    </button>
+    <button hover-class='hover-active' data-index='4' bindtap="changeItem" class='d-fl fl-col {{footerActive === "4" ? "active" : "" }}'>
+      <text class='iconfont {{footerActive === "4" ? "icon-geren1" : "icon-geren" }}'></text>
+      <text>个人</text>
+    </button>
+  </view>
+</view>

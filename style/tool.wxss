@@ -1,0 +1,117 @@
+/* 工具类 */
+/* 主题色 */
+.theme-color {
+  color: #f29e2e;
+}
+.theme-bg {
+  background-color: #f29e2e;
+}
+.theme-b-b {
+  border-bottom: 1px solid #f29e2e;
+}
+
+/* 白色背景 */
+.bg-white {
+  background-color: #fff;
+}
+/* 白色字体 */
+.color-white {
+  color: #fff;
+}
+/* 灰色字体 */
+.color-gray {
+  color: #b2b2b2;
+}
+/* #333 字体 */
+.color-block {
+  color: #333;
+}
+
+/* 黑色半透明蒙版 */
+.block-mask {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  line-height: 54rpx;
+}
+
+/* 对齐方式 */
+.text-center {
+  text-align: center;
+}
+
+/* 定位 */
+.pr {
+  position: relative;
+}
+
+/* 内边距 */
+.pd-lr-30 {
+  padding: 0 30rpx;
+}
+
+.pd-lr-20 {
+  padding: 0 20rpx;
+}
+
+/* 外边距 */
+.mb-45 {
+  margin-bottom: 45rpx;
+}
+.mb-26 {
+  margin-bottom: 26rpx;
+}
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+.mlr-10 {
+  margin: 0 10rpx;
+}
+
+/* 行高 */
+.lh-72 {
+  line-height: 72rpx;
+}
+
+/* 盒模型 */
+.dis-in {
+  display: inline;
+}
+
+/* 盒子阴影 */
+.box-sh {
+  box-shadow: 1px 0 3px 0 #acacac;
+}
+
+/* 盒子内容溢出处理 */
+.of-hidden {
+  overflow: hidden
+}
+
+/* 圆角边框 */
+.br-6 {
+  border-radius: 6rpx;
+}
+
+/* 单行文本溢出省略 */
+.text-ell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* flex 自适应 */
+.d-fl {
+  display: flex;
+}
+.al-center {
+  align-items: center;
+}
+.fl-1 {
+  flex: 1;
+}
+.fl-col {
+  flex-direction: column;
+}
