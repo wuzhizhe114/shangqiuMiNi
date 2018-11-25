@@ -2,6 +2,8 @@
   "usingComponents": {
     "p-header": "/component/pHeader/pHeader",
     "p-footer": "/component/pFooter/pFooter",
+    "van-button": "vant-weapp/button/index",
+    "van-popup": "vant-weapp/popup/index",
     "van-row": "vant-weapp/row/index",
     "van-col": "vant-weapp/col/index"
   }

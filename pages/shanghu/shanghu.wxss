@@ -1,0 +1,75 @@
+/* pages/shanghu/shanghu.wxss */
+/* 商户排行 */
+.shanghu-ranking > .of-x-scroll {
+  height: 160rpx;
+}
+.shanghu-ranking .scroll-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* height: 100%; */
+  width: 800rpx;
+  overflow: hidden;
+}
+.shanghu-ranking .shanghu-item {
+  float: left;
+  width: 250rpx;
+  height: 160rpx;
+}
+.shanghu-ranking .shanghu-item:first-child {
+  margin-left: 0;
+}
+.shanghu-ranking .shanghu-item .item-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  justify-content: center;
+}
+
+/* 商户 nav */
+.shanghu-nav {
+  padding: 40rpx 30rpx;
+}
+/* .shanghu-nav .van-button {
+  display: block;
+  height: 70rpx;
+  line-height: 68rpx;
+}
+.shanghu .van-button--primary {
+  background-color: #f29e2e;
+  border-color: #f29e2e;
+}
+.shanghu .van-button--default {
+  color: #f29e2e;
+  border-color: #f29e2e;
+} */
+
+/* 商户列表 */
+.shanghu-list {
+  padding: 0 30rpx 60rpx; 
+}
+.shanghu-list .list-item {
+  border-bottom-color: #ccc;
+}
+.shanghu-list .list-item > image {
+  width: 205rpx;
+  height: 168rpx;
+}
+
+/* 商品类别弹出层 */
+.product-category .category-box {
+  width: 92vw;
+  padding: 20rpx 40rpx;
+}
+.product-category .van-row {
+  padding: 20rpx 0;
+}
+.product-category .van-button {
+  height: 48rpx;
+  line-height: 46rpx;
+  font-size: 24rpx;
+}

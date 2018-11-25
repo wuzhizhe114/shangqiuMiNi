@@ -1,0 +1,44 @@
+/* component/pHeader/pHeader.wxss */
+/* 字体图标 */
+@import "/style/iconfont.wxss";
+
+.p-header {
+  padding: 20rpx;
+}
+.p-header button {
+  padding: 10rpx;
+  background: transparent;
+  line-height: 1;
+}
+.p-header .iconfont {
+  font-size: 42rpx;
+}
+.p-header .search-box {
+  flex: 1;
+  padding: 0 50rpx;
+}
+.p-header .search-box .search {
+  height: 52rpx;
+  padding-left: 60rpx;
+  font-size: 28rpx;
+}
+
+.p-header .search-box .iconfont {
+  position: absolute;
+  top: 50%;
+  left: 60rpx;
+  transform: translateY(-55%);
+}
+.p-header button.message icon::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 3px solid #f00;
+  border-radius: 50%;
+}
+
+/* 快捷工具样式 */
+@import "/style/tool.wxss";

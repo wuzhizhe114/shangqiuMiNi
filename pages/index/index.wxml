@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class='p-header theme-bg color-white d-fl al-center'>
+  <!-- <view class='p-header theme-bg color-white d-fl al-center'>
     <button hover-class='hover-active'>
       <icon class='iconfont icon-saoma d-fl al-center color-white'></icon>
     </button>
@@ -11,7 +11,8 @@
     <button hover-class='hover-active' class='message'>
       <icon class='iconfont icon-xiaoxi d-fl al-center color-white pr'></icon>
     </button>
-  </view>
+  </view> -->
+  <p-header></p-header>
   <view class='main fl-1'>
     <!-- 市场定位 -->
     <view class="position-market bg-white mb-20 box-sh">
@@ -21,7 +22,7 @@
         <view class='dis-in theme-color theme-b-b pr' hover-class='hover-active'>雪苑农资批发市场</view>
       </view>
       <view class='card-rating mb-26 pr'>
-        <image src='/images/index/market.png'></image>
+        <image src='http://clueless.gitee.io/shangqiuimages/index/market.png'></image>
         <view class='block-mask pd-lr-20'>
           <text class='color-white'>市场信用评级：</text>
           <view class='dis-in theme-color'>
@@ -40,9 +41,9 @@
       <view class='lh-72 text-center theme-color'>信用公告</view>
       <view class='swiper mb-45 pr'>
         <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}" bindchange="swiperChange">
-          <block wx:for="{{swiperData}}" wx:key="*this">
+          <block wx:for="{{swiperData}}" wx:key="{{item.id}}">
             <swiper-item>
-              <image src="{{item}}" class="slide-image"/>
+              <image src="{{item.url}}" class="slide-image" />
             </swiper-item>
           </block>
         </swiper>
@@ -54,8 +55,143 @@
         </view>
       </view>
     </view>
+    <!-- 信用排行 -->
+    <view class='credit-ranking bg-white mb-20 box-sh pd-lr-30 of-hidden'>
+      <view class='lh-72 text-center theme-color'>信用排行</view>
+      <view class='ranking-box of-hidden'>
+        <view class='first of-hidden'>
+          <view class='ranking-first mb-26 pr'>
+            <image src='https://clueless.gitee.io/shangqiuimages/index/first_pic.png'></image>
+            <view class='block-mask pd-lr-20'>
+              <text class='color-white'>信用评级：</text>
+              <view class='dis-in theme-color'>
+                <text class="iconfont icon-stars"></text>
+                <text class="iconfont icon-stars"></text>
+                <text class="iconfont icon-stars"></text>
+                <text class="iconfont icon-stars"></text>
+                <text class="iconfont icon-xingxingxianmiao"></text>
+              </view>
+            </view>
+          </view>
+          <view class='d-fl mb-26'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view class='fl-1'>
+              <text class='iconfont icon-pinglun theme-color'></text> 3452</view>
+          </view>
+        </view>
+        <view class='second-third d-fl fs-24'>
+          <view class='fl-1 d-fl fl-col'>
+            <view class='ranking-second mb-26 pr fl-1'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/second_pic.png'></image>
+              <view class='block-mask pd-lr-20'>
+                <text class='color-white'>信用评级：</text>
+                <view class='dis-in theme-color'>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-xingxingxianmiao"></text>
+                </view>
+              </view>
+            </view>
+            <view class='d-fl mb-26'>
+              <view class='fl-1'>商丘农家</view>
+              <view class='fl-1 text-right'>
+                商品数量：
+                <text class='theme-color'>30</text>
+              </view>
+            </view>
+          </view>
+          <view class='shuxian mlr-30'></view>
+          <view class='fl-1 d-fl fl-col'>
+            <view class='ranking-third mb-26 pr fl-1'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/third_pic.png'></image>
+              <view class='block-mask pd-lr-20'>
+                <text class='color-white'>信用评级：</text>
+                <view class='dis-in theme-color'>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-xingxingxianmiao"></text>
+                </view>
+              </view>
+            </view>
+            <view class='d-fl mb-26'>
+              <view class='fl-1'>商丘农家</view>
+              <view class='fl-1 text-right'>
+                商品数量：
+                <text class='theme-color'>30</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='other mb-26'>
+          <view class='other-item d-fl pd-tb-20 theme-b-b pr' hover-class='block-active'>
+            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/qiandama.png'></image>
+            <view class='fl-1 d-fl fl-col'>
+              <view class='fl-1 d-fl'>
+                <view class='title fl-1'>钱大妈</view>
+                <view class='fs-24'>
+                  商品数量：
+                  <text class='theme-color'>30</text>
+                </view>
+              </view>
+              <view>
+                <text>信用评级：</text>
+                <view class='dis-in theme-color'>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-xingxingxianmiao"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class='other-item d-fl pd-tb-20 theme-b-b pr' hover-class='block-active'>
+            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/qiandama.png'></image>
+            <view class='fl-1 d-fl fl-col'>
+              <view class='fl-1 d-fl'>
+                <view class='title fl-1'>钱大妈</view>
+                <view class='fs-24'>
+                  商品数量：
+                  <text class='theme-color'>30</text>
+                </view>
+              </view>
+              <view>
+                <text>信用评级：</text>
+                <view class='dis-in theme-color'>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-stars"></text>
+                  <text class="iconfont icon-xingxingxianmiao"></text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class='show-more text-center color-gray d-fl fl-col mb-26 pr' hover-class='hover-active'>
+          <view class='fl-1'>查看更多</view>
+          <text class='iconfont icon-xiangxia fl-1'></text>
+        </view>
+      </view>
+    </view>
+    <!-- 信用商品 -->
+    <view class='credit-product bg-white mb-26 box-sh pd-lr-30 of-hidden pb-20'>
+      <view class='lh-72 text-center theme-color'>信用商品</view>
+      <van-row wx:for="{{productData}}" wx:key="{{index}}" wx:for-index="rowIndex" wx:for-item="rowItem">
+        <van-col span="8" class="text-center" wx:for="{{rowItem}}" wx:key="{{item.text}}">
+          <image class='product-img br-half box-sh-all' src='{{item.url}}'></image>
+          <view class='theme-color'>{{item.text}}</view>
+        </van-col>
+      </van-row>
+    </view>
   </view>
-  <view class='p-footer d-fl'>
+  <!-- <view class='p-footer d-fl'>
     <button hover-class='hover-active' data-index='0' bindtap="changeItem" class='d-fl fl-col {{footerActive === "0" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "0" ? "icon-yemian-copy" : "icon-shouye" }}'></text>
       <text>首页</text>
@@ -76,5 +212,6 @@
       <text class='iconfont {{footerActive === "4" ? "icon-geren1" : "icon-geren" }}'></text>
       <text>个人</text>
     </button>
-  </view>
+  </view> -->
+  <p-footer></p-footer>
 </view>

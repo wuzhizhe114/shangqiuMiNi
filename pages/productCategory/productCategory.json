@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "p-header": "/component/pHeader/pHeader",
+    "van-button": "vant-weapp/button/index"
+  }
+}

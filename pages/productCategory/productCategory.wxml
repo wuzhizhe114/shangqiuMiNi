@@ -1,0 +1,38 @@
+<!--pages/productCategory/productCategory.wxml-->
+<view class='container product-category'>
+  <p-header/>
+  <view class='main fl-1'>
+    <view class='product-info bg-white box-sh pd-30 d-fl'>
+      <image src='{{picHost}}index/roulei.png' class='gray-border'></image>
+      <view class='fl-1 ml-24 fs-24'>
+        <view class='d-fl mb-26'>
+          <text class='fl-1 fs-32'>品类：生菜</text>
+          <text class='iconfont icon-star color-red fs-58'></text>
+        </view>
+        <view class='mb-10'>
+          <text class='iconfont icon-shangjia theme-color mr-10'></text>
+          <text>销售商户：14家</text>
+        </view>
+        <view class='mb-10'>
+          <text class='iconfont icon-jiage theme-color mr-10'></text>
+          <text>平均价格：<text class='theme-color'>2.5</text> 元/斤</text>
+        </view>
+        <view class='mb-10'>
+          <text class='iconfont icon-iconset0445 theme-color mr-10'></text>
+          <text>最高售价：<text class='color-red'>2.8 元/斤</text></text>
+        </view>
+        <view>
+          <text class='iconfont icon-iconset0444 theme-color mr-10'></text>
+          <text>最低售价：<text class='color-blue'>2.0 元/斤</text></text>
+        </view>
+      </view>
+    </view>
+    <view class='product-nav pd-30 d-fl'>
+      <van-button type="primary" class=''>按信用等级</van-button>
+      <van-button type="default" class=' ml-24 theme-color'>按价格高低</van-button>
+    </view>
+    <view class='product-list bg-white box-sh pd-30'>
+
+    </view>
+  </view>
+</view>

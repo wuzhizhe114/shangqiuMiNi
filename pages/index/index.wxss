@@ -1,6 +1,6 @@
 /**index.wxss**/
 /* 头部 start */
-.p-header {
+/* .p-header {
   padding: 20rpx;
 }
 .p-header button {
@@ -36,11 +36,11 @@
   height: 0;
   border: 3px solid #f00;
   border-radius: 50%;
-}
+} */
 /* 头部 end */
 
 /* 底部 start */
-.p-footer {
+/* .p-footer {
   align-items: flex-end;
 }
 .p-footer button {
@@ -88,15 +88,15 @@
   100% {
     transform: rotate(0)
   }
-}
+} */
 /* 底部 end */
 
 
 /* 中间内容 */
-.main {
+/* .main {
   overflow-y: scroll;
-  margin-bottom: -60rpx;
-}
+  margin-bottom: -70rpx;
+} */
 .main .position-market {
   padding: 35rpx 30rpx;
 }
@@ -112,7 +112,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   line-height: 54rpx;
 } */
-
+/* 信用公告 */
 .credit-announce .swiper-tips .indicator {
   width: 14rpx;
   height: 14rpx;
@@ -122,4 +122,36 @@
 }
 .credit-announce .swiper-tips .indicator.on {
   background-color: #fff;
+}
+
+/* 信用排行 */
+.credit-ranking .ranking-first {
+  height: 334rpx;
+}
+.credit-ranking .second-third {
+  height: 234rpx;
+  border-bottom: 1px dashed #6b6b6b;
+}
+.credit-ranking .second-third .shuxian {
+  width: 0;
+  height: 62%;
+  border-left: 1px dashed #6b6b6b;
+}
+.credit-ranking .other .other-item {
+  border-bottom-color: #e5e5e5; 
+}
+.credit-ranking .other .other-pic {
+  height: 94rpx;
+  width: 170rpx;
+}
+/* 信用商品 */
+.credit-product .product-img {
+  width: 140rpx;
+  height: 140rpx;
+}
+.credit-product .van-col {
+  padding: 20rpx; 
+}
+.credit-product .van-col:active {
+  background-color: rgba(0, 0, 0, 0.05); 
 }

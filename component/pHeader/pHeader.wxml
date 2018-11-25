@@ -1,0 +1,13 @@
+<!--component/pHeader/pHeader.wxml-->
+<view class='p-header theme-bg color-white d-fl al-center'>
+  <button hover-class='hover-active'>
+    <icon class='iconfont icon-saoma d-fl al-center color-white'></icon>
+  </button>
+  <view class='search-box pr fl-1'>
+    <icon class='iconfont icon-magnifier color-gray'></icon>
+    <input class='search bg-white br-6 color-block' placeholder='搜索商户或者商品' placeholder-class='color-gray' confirm-type='search'></input>
+  </view>
+  <button hover-class='hover-active' class='message'>
+    <icon class='iconfont icon-xiaoxi d-fl al-center color-white pr'></icon>
+  </button>
+</view>

@@ -1,0 +1,60 @@
+/* component/pFooter/pFooter.wxss */
+/* 字体图标 */
+@import "/style/iconfont.wxss";
+/* 底部 start */
+navigator {
+  flex: 1
+}
+.p-footer {
+  align-items: flex-end;
+}
+.p-footer button {
+  border-radius: 0;
+  line-height: 1;
+  padding: 16rpx 0 ;
+  font-size: 28rpx;
+  background-color: #f29e2e;
+  /* flex: 1; */
+  color: #fff;
+}
+.p-footer button.yaoyiyao {
+  padding-top: 36rpx;
+  border-radius: calc(100vw/5) calc(100vw/5) 0 0;
+}
+.p-footer button.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  z-index: 10;
+}
+.p-footer button .iconfont {
+  font-size: 40rpx;
+  margin-bottom: 16rpx;
+}
+.p-footer button.yaoyiyao .iconfont {
+  font-size: 80rpx;
+  margin-bottom: 26rpx;
+}
+.p-footer button.yaoyiyao.active .iconfont {
+  animation: yaohuang 0.2s 2;
+}
+
+@keyframes yaohuang {
+  25% {
+    transform: rotate(-30deg)
+  }
+  75% {
+    transform: rotate(30deg)
+  }
+  100% {
+    transform: rotate(0)
+  }
+}
+/* 底部 end */
+
+/* 快捷工具样式 */
+@import "/style/tool.wxss";

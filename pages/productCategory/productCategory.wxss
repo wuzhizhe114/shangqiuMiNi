@@ -1,0 +1,5 @@
+/* pages/productCategory/productCategory.wxss */
+.product-info > image {
+  width: 324rpx;
+  height: 254rpx;
+}

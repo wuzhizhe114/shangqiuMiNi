@@ -4,18 +4,71 @@ const app = getApp()
 
 Page({
   data: {
-    footerActive: '0',
+    // footerActive: '0',
     swiperData:[
-      '../../images/index/carousel1.png',
-      '../../images/index/carousel1.png',
-      '../../images/index/carousel1.png'
+      {
+        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        id: '111'
+      },
+      {
+        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        id: '222'
+      },
+      {
+        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        id: '333'
+      }
     ],
     swiperTips:[
       '市场部门开展食品安全整治111',
       '市场部门开展食品安全整治222',
       '市场部门开展食品安全整治333'
     ],
-    swiperIndex: 0
+    swiperIndex: 0,
+    productData:[
+      [
+        {
+          url:'http://clueless.gitee.io/shangqiuimages/index/shucai.png',
+          text:'蔬菜'
+        },
+        {
+          url:'http://clueless.gitee.io/shangqiuimages/index/guopin.png',
+          text:'果品'
+        },
+        {
+          url:'http://clueless.gitee.io/shangqiuimages/index/roulei.png',
+          text:'肉类'
+        }
+      ],
+      [
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/liangyou.png',
+          text: '粮油'
+        },
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/shuichan.png',
+          text: '水产'
+        },
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/fushi.png',
+          text: '副食'
+        }
+      ],
+      [
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/qindan.png',
+          text: '禽蛋'
+        },
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/tiaoliao.png',
+          text: '调料'
+        },
+        {
+          url: 'http://clueless.gitee.io/shangqiuimages/index/junlei.png',
+          text: '菌类'
+        }
+      ]
+    ]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -59,9 +112,9 @@ Page({
     })
   },
   // 底部导航切换
-  changeItem (e) {
-    this.setData({
-      footerActive: e.currentTarget.dataset['index']
-    })
-  }
+  // changeItem (e) {
+  //   this.setData({
+  //     footerActive: e.currentTarget.dataset['index']
+  //   })
+  // }
 })

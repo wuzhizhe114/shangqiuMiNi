@@ -1,0 +1,190 @@
+<!--pages/shanghu/shanghu.wxml-->
+<view class='container shanghu'>
+  <p-header></p-header>
+  <view class='main fl-1'>
+    <!-- 商户排行 -->
+    <view class='shanghu-ranking pd-30 bg-white box-sh'>
+      <view class='of-x-scroll pr'>
+        <view class='scroll-box'>
+          <navigator class='shanghu-item ml-24 pr' url="/pages/index/index">
+            <image src='{{picHost}}index/first_pic.png'></image>
+            <view class='item-tip d-fl al-center'>
+              <text>信用排行</text>
+            </view>
+          </navigator>
+          <navigator class='shanghu-item ml-24 pr' url="/pages/index/index">
+            <image src='{{picHost}}index/first_pic.png'></image>
+            <view class='item-tip d-fl al-center'>
+              <text>模范商户</text>
+            </view>
+          </navigator>
+          <navigator class='shanghu-item ml-24 pr' url="/pages/index/index">
+            <image src='{{picHost}}index/first_pic.png'></image>
+            <view class='item-tip d-fl al-center'>
+              <text>卫生标兵</text>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+    <!-- 商户导航 -->
+    <view class='shanghu-nav d-fl'>
+      <van-button type="primary" class='fl-1'>按信用评分</van-button>
+      <van-button type="default" class='fl-1 ml-24 theme-color' bindtap='showProductCategory'>按商品类别</van-button>
+      <van-button type="default" class='fl-1 ml-24'>按商品数量</van-button>
+    </view>
+    <!-- 商户列表 -->
+    <view class='shanghu-list bg-white box-sh mb-45'>
+      <view class='list-item pd-tb-26 d-fl theme-b-b'>
+        <image src='{{picHost}}index/qiandama.png'></image>
+        <view class='fl-1 ml-24 fs-24'>
+          <view class='title d-fl mb-10'>
+            <text class='fl-1 fs-32'>农资大市场</text>
+            <text>4.6km</text>
+          </view>
+          <view class='mb-10'>
+            <text>信用评级：</text>
+            <view class='dis-in theme-color'>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-xingxingxianmiao"></text>
+            </view>
+          </view>
+          <view class='mb-10'>
+            <text class='iconfont icon-mai theme-color mr-10'></text>
+            <text>主营：水产，海鲜</text>
+          </view>
+          <view class='d-fl'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view>
+              <text class='iconfont icon-pinglun theme-color fs-32'></text>3425
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='list-item pd-tb-26 d-fl theme-b-b'>
+        <image src='{{picHost}}index/qiandama.png'></image>
+        <view class='fl-1 ml-24 fs-24'>
+          <view class='title d-fl mb-10'>
+            <text class='fl-1 fs-32'>农资大市场</text>
+            <text>4.6km</text>
+          </view>
+          <view class='mb-10'>
+            <text>信用评级：</text>
+            <view class='dis-in theme-color'>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-xingxingxianmiao"></text>
+            </view>
+          </view>
+          <view class='mb-10'>
+            <text class='iconfont icon-mai theme-color mr-10'></text>
+            <text>主营：水产，海鲜</text>
+          </view>
+          <view class='d-fl'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view>
+              <text class='iconfont icon-pinglun theme-color fs-32'></text>3425
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='list-item pd-tb-26 d-fl theme-b-b'>
+        <image src='{{picHost}}index/qiandama.png'></image>
+        <view class='fl-1 ml-24 fs-24'>
+          <view class='title d-fl mb-10'>
+            <text class='fl-1 fs-32'>农资大市场</text>
+            <text>4.6km</text>
+          </view>
+          <view class='mb-10'>
+            <text>信用评级：</text>
+            <view class='dis-in theme-color'>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-xingxingxianmiao"></text>
+            </view>
+          </view>
+          <view class='mb-10'>
+            <text class='iconfont icon-mai theme-color mr-10'></text>
+            <text>主营：水产，海鲜</text>
+          </view>
+          <view class='d-fl'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view>
+              <text class='iconfont icon-pinglun theme-color fs-32'></text>3425
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='list-item pd-tb-26 d-fl theme-b-b'>
+        <image src='{{picHost}}index/qiandama.png'></image>
+        <view class='fl-1 ml-24 fs-24'>
+          <view class='title d-fl mb-10'>
+            <text class='fl-1 fs-32'>农资大市场</text>
+            <text>4.6km</text>
+          </view>
+          <view class='mb-10'>
+            <text>信用评级：</text>
+            <view class='dis-in theme-color'>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-xingxingxianmiao"></text>
+            </view>
+          </view>
+          <view class='mb-10'>
+            <text class='iconfont icon-mai theme-color mr-10'></text>
+            <text>主营：水产，海鲜</text>
+          </view>
+          <view class='d-fl'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view>
+              <text class='iconfont icon-pinglun theme-color fs-32'></text>3425
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <p-footer footerActive="1"></p-footer>
+  <van-popup show="{{ showPopup }}" bind:close="popupClose" class="product-category">
+    <view class='category-box'>
+      <view class='title theme-color text-center mb-26 fs-32'>
+        <text class='iconfont icon-cailanzi fs-32'></text>
+        <text>请选择商品类型</text>
+      </view>
+      <van-row gutter="20">
+        <van-col span="6"><van-button type="primary">蔬菜</van-button></van-col>
+        <van-col span="6"><van-button type="default" bindtap='popupClose'>果品</van-button></van-col>
+        <van-col span="6"><van-button type="default">肉类</van-button></van-col>
+        <van-col span="6"><van-button type="default">粮油</van-button></van-col>
+      </van-row>
+      <van-row gutter="20">
+        <van-col span="6"><van-button type="default">禽蛋</van-button></van-col>
+        <van-col span="6"><van-button type="default">调料</van-button></van-col>
+        <van-col span="6"><van-button type="default">副食</van-button></van-col>
+        <van-col span="6"><van-button type="default">调料</van-button></van-col>
+      </van-row>
+      <van-row gutter="20">
+        <van-col span="6"><van-button type="default">菌类</van-button></van-col>
+        <van-col span="6"><van-button type="default">种子</van-button></van-col>
+        <van-col span="6"><van-button type="default">茶叶</van-button></van-col>
+      </van-row>
+    </view>
+  </van-popup>
+</view>
