@@ -13,6 +13,8 @@
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display:inline-block;
+  vertical-align:middle;
 }
 
 .icon-jiage:before { content: "\e65d"; }

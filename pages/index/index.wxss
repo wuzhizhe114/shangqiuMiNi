@@ -128,9 +128,24 @@
 .credit-ranking .ranking-first {
   height: 334rpx;
 }
+.credit-ranking .ranking-first .guanjun {
+  position: absolute;
+  width: 58rpx;
+  height: 64rpx;
+  top: -26rpx;
+  left: -24rpx;
+}
 .credit-ranking .second-third {
   height: 234rpx;
   border-bottom: 1px dashed #6b6b6b;
+}
+.credit-ranking .second-third .yajun ,
+.credit-ranking .second-third .jijun {
+  position: absolute;
+  width: 42rpx;
+  height: 52rpx;
+  top: -22rpx;
+  left: -16rpx;
 }
 .credit-ranking .second-third .shuxian {
   width: 0;
@@ -149,7 +164,7 @@
   width: 140rpx;
   height: 140rpx;
 }
-.credit-product .van-col {
+.credit-product .van-col navigator {
   padding: 20rpx; 
 }
 .credit-product .van-col:active {

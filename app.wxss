@@ -59,7 +59,7 @@ page {
 .container .van-button {
   display: block;
   height: 70rpx;
-  line-height: 68rpx;
+  line-height: 66rpx;
 }
 .container .van-button--primary {
   background-color: #f29e2e;

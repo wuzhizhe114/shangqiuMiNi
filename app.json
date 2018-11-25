@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/productCategory/productCategory",
-    "pages/shanghu/shanghu",
     "pages/index/index",
+    "pages/shanghu/shanghu",
+    "pages/productCategory/productCategory",
     "pages/logs/logs"
   ],
   "window": {

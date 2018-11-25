@@ -58,10 +58,11 @@
     <!-- 信用排行 -->
     <view class='credit-ranking bg-white mb-20 box-sh pd-lr-30 of-hidden'>
       <view class='lh-72 text-center theme-color'>信用排行</view>
-      <view class='ranking-box of-hidden'>
-        <view class='first of-hidden'>
+      <view class='ranking-box'>
+        <view class='first'>
           <view class='ranking-first mb-26 pr'>
             <image src='https://clueless.gitee.io/shangqiuimages/index/first_pic.png'></image>
+            <image src='https://clueless.gitee.io/shangqiuimages/index/first.png' class='guanjun'></image>
             <view class='block-mask pd-lr-20'>
               <text class='color-white'>信用评级：</text>
               <view class='dis-in theme-color'>
@@ -85,7 +86,8 @@
           <view class='fl-1 d-fl fl-col'>
             <view class='ranking-second mb-26 pr fl-1'>
               <image src='https://clueless.gitee.io/shangqiuimages/index/second_pic.png'></image>
-              <view class='block-mask pd-lr-20'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/second.png' class='yajun'></image>
+              <view class='block-mask pl-20'>
                 <text class='color-white'>信用评级：</text>
                 <view class='dis-in theme-color'>
                   <text class="iconfont icon-stars"></text>
@@ -108,7 +110,8 @@
           <view class='fl-1 d-fl fl-col'>
             <view class='ranking-third mb-26 pr fl-1'>
               <image src='https://clueless.gitee.io/shangqiuimages/index/third_pic.png'></image>
-              <view class='block-mask pd-lr-20'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/third.png' class='jijun'></image>
+              <view class='block-mask pl-20'>
                 <text class='color-white'>信用评级：</text>
                 <view class='dis-in theme-color'>
                   <text class="iconfont icon-stars"></text>
@@ -185,8 +188,10 @@
       <view class='lh-72 text-center theme-color'>信用商品</view>
       <van-row wx:for="{{productData}}" wx:key="{{index}}" wx:for-index="rowIndex" wx:for-item="rowItem">
         <van-col span="8" class="text-center" wx:for="{{rowItem}}" wx:key="{{item.text}}">
-          <image class='product-img br-half box-sh-all' src='{{item.url}}'></image>
-          <view class='theme-color'>{{item.text}}</view>
+          <navigator url='/pages/productCategory/productCategory'>
+            <image class='product-img br-half box-sh-all' src='{{item.url}}'></image>
+            <view class='theme-color'>{{item.text}}</view>
+          </navigator>
         </van-col>
       </van-row>
     </view>
