@@ -56,6 +56,10 @@ page {
 }
 
 /* button */
+.container .van-button--normal {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+}
 .container .van-button {
   display: block;
   height: 70rpx;
@@ -80,6 +84,19 @@ button::after {
   /* padding-bottom: 60rpx; */
   margin-bottom: -70rpx;
 }
+
+/* 底部提示 */
+.page-end .line {
+  height: 0;
+  border-bottom: 1px solid #ddd;
+}
+/* 底部提示
+<view class='page-end pd-30 color-gray d-fl al-center'>
+  <text class='line fl-1'></text>
+  <text class='mlr-10'>我也是有底线的</text>
+  <text class='line fl-1'></text>
+</view> */
+
 
 /* 快捷工具样式 */
 @import "style/tool.wxss";

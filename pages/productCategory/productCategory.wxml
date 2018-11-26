@@ -1,9 +1,9 @@
 <!--pages/productCategory/productCategory.wxml-->
 <view class='container product-category'>
   <p-header/>
-  <view class='main fl-1'>
+  <view class='main fl-1 mb-0'>
     <view class='product-info bg-white box-sh pd-30 d-fl'>
-      <image src='{{picHost}}index/roulei.png' class='gray-border'></image>
+      <image src='{{picHost}}shanghu/shucai.png' class='gray-border'></image>
       <view class='fl-1 ml-24 fs-24'>
         <view class='d-fl mb-26'>
           <text class='fl-1 fs-32'>品类：生菜</text>
@@ -31,8 +31,129 @@
       <van-button type="primary" class=''>按信用等级</van-button>
       <van-button type="default" class=' ml-24 theme-color'>按价格高低</van-button>
     </view>
-    <view class='product-list bg-white box-sh pd-30'>
+    <view class='product-list bg-white box-sh pd-lr-30'>
+      <navigator url='/pages/shanghuInfo/shanghuInfo' class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl'>
+            <text class='fl-1'>李三熟食</text>
+            <text class='color-blue fs-32'>2.5 元/斤</text>
+          </view>
+          <view class='fs-24 mb-10'>
+            <text class='mr-10'>信用评级：</text>
+            <text class='theme-color'>
+              <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+          </view>
+          <view class='d-fl fs-24'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
+            <text> <text class='iconfont icon-iconset0444 theme-color'></text> 0.3元/斤</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl'>
+            <text class='fl-1'>李三熟食</text>
+            <text class='color-blue fs-32'>2.5 元/斤</text>
+          </view>
+          <view class='fs-24 mb-10'>
+            <text class='mr-10'>信用评级：</text>
+            <text class='theme-color'>
+              <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+          </view>
+          <view class='d-fl fs-24'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
+            <text> <text class='iconfont icon-iconset0444 theme-color'></text> 0.3元/斤</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl'>
+            <text class='fl-1'>李三熟食</text>
+            <text class='color-blue fs-32'>2.5 元/斤</text>
+          </view>
+          <view class='fs-24 mb-10'>
+            <text class='mr-10'>信用评级：</text>
+            <text class='theme-color'>
+              <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+          </view>
+          <view class='d-fl fs-24'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
+            <text> <text class='iconfont icon-iconset0444 theme-color'></text> 0.3元/斤</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl'>
+            <text class='fl-1'>李三熟食</text>
+            <text class='color-blue fs-32'>2.5 元/斤</text>
+          </view>
+          <view class='fs-24 mb-10'>
+            <text class='mr-10'>信用评级：</text>
+            <text class='theme-color'>
+              <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+          </view>
+          <view class='d-fl fs-24'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
+            <text> <text class='iconfont icon-iconset0444 theme-color'></text> 0.3元/斤</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl'>
+            <text class='fl-1'>李三熟食</text>
+            <text class='color-red fs-32'>2.6 元/斤</text>
+          </view>
+          <view class='fs-24 mb-10'>
+            <text class='mr-10'>信用评级：</text>
+            <text class='theme-color'>
+              <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+          </view>
+          <view class='d-fl fs-24'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
+            <text> <text class='iconfont icon-iconset0445 theme-color'></text> 0.3元/斤</text>
+          </view>
+        </view>
+      </navigator>
 
+      <!-- 底部提示 -->
+      <view class='page-end pd-30 color-gray d-fl al-center'>
+        <text class='line fl-1'></text>
+        <text class='mlr-10'>我是有底线的</text>
+        <text class='line fl-1'></text>
+      </view>
     </view>
   </view>
 </view>

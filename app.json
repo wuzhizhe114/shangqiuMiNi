@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/positionMarket/positionMarket",
     "pages/index/index",
-    "pages/shanghu/shanghu",
+    "pages/shanghuInfo/shanghuInfo",
     "pages/productCategory/productCategory",
+    "pages/shanghu/shanghu",
     "pages/logs/logs"
   ],
   "window": {

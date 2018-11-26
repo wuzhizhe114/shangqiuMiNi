@@ -1,0 +1,64 @@
+/* pages/shanghuInfo/shanghuInfo.wxss */
+
+.shanghu-info .basic-info > image {
+  width: 325rpx;
+  height: 258rpx;
+}
+/* 默认其他信息 */
+/* 执照 */
+.shanghu-info .other-default .zhizhao-pic {
+  width: 256rpx;
+  height: 165rpx;
+}
+/* 简介 */
+.other-default .intro .content {
+  padding: 26rpx 50rpx;
+  background: url('https://clueless.gitee.io/shangqiuimages/shanghu/mohu_bg.png') no-repeat center center;
+  background-size: 100% 100%;
+  border-color: #f29e2e;
+}
+.other-default .product-recom .nav {
+  border-left: 2px solid #f29e2e;
+  margin: 20rpx 0;
+}
+.other-default .product-recom .nav > text {
+  margin: 0 20rpx;
+}
+.other-default .product-recom .product-list {
+  border-top: 1px solid #ccc;
+}
+.other-default .product-recom .product-list .item {
+  border-bottom-color: #ccc;
+}
+.other-default .product-recom .product-list .item-pic {
+  width: 170rpx;
+  height: 120rpx;
+}
+
+/* 评价 其他信息 */
+.other-evaluate .evaluate-item {
+  padding: 20rpx 120rpx;
+  justify-content: space-between;
+}
+.other-evaluate .evaluate-item input {
+  border: 1px solid #f29e2e;
+  border-radius: 2px;
+  height: 70rpx;
+}
+.other-evaluate .evaluate-item .img {
+  width: 190rpx;
+  height: 150rpx;
+  border-radius: 2px;
+  border-color: #f29e2e;
+}
+.other-evaluate .evaluate-item .icon-camera {
+  font-size: 88rpx
+}
+.other-evaluate .evaluate-item .tips {
+  padding: 20rpx 0 0 30rpx;
+}
+
+/* 地图 其他信息 */
+.other-map .map-pic {
+  height: 404rpx;
+}

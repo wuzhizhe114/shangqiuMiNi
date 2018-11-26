@@ -54,6 +54,14 @@
 .fs-24 {
   font-size: 24rpx;
 }
+/* 11号 字体 */
+.fs-22 {
+  font-size: 22rpx;
+}
+/* 11号 字体 */
+.fs-20 {
+  font-size: 20rpx;
+}
 
 /* 黑色半透明蒙版 */
 .block-mask {
@@ -94,6 +102,15 @@
 .pd-tb-20 {
   padding: 20rpx 0;
 }
+.pd-tb-10 {
+  padding: 10rpx 0;
+}
+.pb-60 {
+  padding-bottom: 60rpx;
+}
+.pb-30 {
+  padding-bottom: 30rpx;
+}
 .pb-20 {
   padding-bottom: 20rpx;
 }
@@ -111,6 +128,9 @@
 .ml-24 {
   margin-left: 24rpx;
 }
+.mb-60 {
+  margin-bottom: 60rpx;
+}
 .mb-45 {
   margin-bottom: 45rpx;
 }
@@ -122,6 +142,9 @@
 }
 .mb-10 {
   margin-bottom: 10rpx;
+}
+.mb-0 {
+  margin-bottom: 0rpx;
 }
 .mlr-30 {
   margin: 0 30rpx;
@@ -177,6 +200,12 @@
 }
 .al-center {
   align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+.jc-space-b {
+  justify-content: space-between;
 }
 .fl-1 {
   flex: 1;

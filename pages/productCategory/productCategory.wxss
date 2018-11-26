@@ -1,5 +1,23 @@
 /* pages/productCategory/productCategory.wxss */
+/* .product-category .main {
+  margin-bottom: 0rpx;
+} */
+
 .product-info > image {
   width: 324rpx;
   height: 254rpx;
 }
+/* .product-list {
+  padding-bottom: 110rpx;
+} */
+.product-list > .item {
+  border-bottom-color: #ccc;
+}
+.product-list > .item:last-child {
+  border-bottom: none;
+}
+.product-list > .item > image {
+  width: 170rpx;
+  height: 120rpx;
+}
+

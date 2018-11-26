@@ -1,0 +1,232 @@
+<!--pages/shanghuInfo/shanghuInfo.wxml-->
+<view class='container shanghu-info'>
+  <p-header />
+  <view class='main fl-1 mb-0'>
+    <view class='basic-info pd-30 bg-white box-sh mb-20 d-fl'>
+      <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+      <view class='fl-1 ml-24'>
+        <view class='d-fl'>
+          <text class='fl-1'>李三熟食</text>
+          <text class='iconfont icon-star color-red fs-58'></text>
+        </view>
+        <view class='d-fl fs-22 mb-20'>
+          <text class='fl-1 d-fl al-center'>信用评级：<text class='theme-color'>
+              <text class='iconfont fs-24 icon-stars'></text>
+          <text class='iconfont fs-24 icon-stars'></text>
+          <text class='iconfont fs-24 icon-stars'></text>
+          <text class='iconfont fs-24 icon-stars'></text>
+          <text class='iconfont fs-24 icon-xingxingxianmiao'></text>
+          </text>
+          </text>
+          <view class='pr' data-other-index="1" hover-class='block-active' bindtap='otherChange'>
+            <text class='iconfont icon-bianji color-blue fs-58'></text>
+          </view>
+        </view>
+        <view class='d-fl fs-22 mb-20'>
+          <view class='fl-1 d-fl al-center'>
+            营业时间：
+            <text>09:00-20:00</text>
+          </view>
+          <view class=''>
+            <van-tag plain type="primary" color="#f29e2e">营业中</van-tag>
+          </view>
+        </view>
+        <view class='d-fl fs-22'>
+          <view class='fl-1 mr-10'>
+            <text class='iconfont icon-dingweiweizhi theme-color fs-24'></text>
+            <text>商丘市睢阳区雪苑农贸市场2楼301</text>
+          </view>
+          <view class='text-center color-blue ml-24 pr' data-other-index="2" hover-class='block-active' bindtap='otherChange'>
+            <text class='iconfont icon-daohang fs-24'></text>
+            <view class='fs-20'>去店里</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 默认 其他信息 -->
+    <view class='other-default' hidden='{{!(otherActive === "0")}}'>
+      <view class='zhizhao-box bg-white box-sh pd-lr-30 mb-20'>
+        <view class='text-center lh-72 theme-color fs-32'>资质牌照</view>
+        <view class='d-fl'>
+          <view class='fl-1 text-center pd-tb-26'>
+            <image src='{{picHost}}shanghu/zhizhao2.png' class='zhizhao-pic gray-border'></image>
+            <view class='fs-22'>个体户工商营业执照</view>
+          </view>
+          <view class='fl-1 text-center pd-tb-26'>
+            <image src='{{picHost}}shanghu/zhizhao1.png' class='zhizhao-pic gray-border'></image>
+            <view class='fs-22'>食品流通许可证</view>
+          </view>
+        </view>
+      </view>
+      <view class='intro bg-white box-sh pd-lr-30 of-hidden mb-20'>
+        <view class='lh-72 theme-color text-center'>简介</view>
+        <view class='content mb-45 gray-border'>
+          <view class='mb-20'>本公司从2018年02月05日开始在商丘市雪苑农贸市场经营蔬菜销售生意本公司从2018年02月05日开始在商丘市雪苑农贸市=开始在商丘市雪苑农贸市场经营蔬菜销售生意</view>
+          <view>经营范围：蔬菜，果品、菌类、禽蛋</view>
+        </view>
+      </view>
+      <view class='product-recom bg-white pd-lr-30 of-hidden'>
+        <view class='nav'>
+          <text class='theme-color'>推荐</text>
+          <text>蔬菜</text>
+          <text>果品</text>
+          <text>菌类</text>
+          <text>禽蛋</text>
+        </view>
+        <view class='product-list'>
+          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+
+          <!-- 底部提示 -->
+          <view class='page-end pd-30 color-gray d-fl al-center'>
+            <text class='line fl-1'></text>
+            <text class='mlr-10'>我是有底线的</text>
+            <text class='line fl-1'></text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 评价 其他信息 -->
+    <view class='other-evaluate bg-white box-sh pd-lr-30 pb-60' hidden='{{!(otherActive === "1")}}'>
+      <view class='lh-72 theme-color text-center fs-32'>您对商户的评价</view>
+      <view class='d-fl jc-center pd-tb-26'>
+        <van-rate value="{{ valueRate }}" bind:change="rateChange" void-color="#ffd21e" size="28" />
+      </view>
+      <view class='evaluate-item d-fl'>
+        <van-button type="primary">卫生不达标</van-button>
+        <van-button>价格偏高</van-button>
+      </view>
+      <view class='evaluate-item d-fl'>
+        <van-button>电子秤不准</van-button>
+        <van-button>态度恶劣</van-button>
+      </view>
+      <view class='evaluate-item'>
+        <input type='text' class='fs-24 pl-20' placeholder='其他想说（将延迟匿名告知商家' placeholder-class='color-gray' confirm-type='done'></input>
+      </view>
+      <view class='evaluate-item d-fl mb-60'>
+        <view hover-class='block-active' class='img d-fl al-center jc-center gray-border pr'>
+          <text class='iconfont icon-camera color-gray'></text>
+        </view>
+        <view class='tips fl-1 fs-20 color-gray'>
+          <text>请上传需要投诉问题的图片，单张图片大小不得超过5M，最多上传5张。</text>
+        </view>
+      </view>
+      <view class='d-fl mb-45'>
+        <van-button type='primary' class='fl-1'>匿名提交</van-button>
+      </view>
+      <view class='d-fl jc-space-b'>
+        <view class='color-red pr' hover-class='block-active'>
+          <text class='iconfont icon-dianhua mr-10'></text>
+          <text>投诉电话</text>
+        </view>
+        <view class='color-blue pr' hover-class='block-active'>
+          <text class='iconfont icon-jianyi mr-10'></text>
+          <text>投诉建议</text>
+        </view>
+      </view>
+    </view>
+    <!-- 地图 其他信息 -->
+    <view class='other-map bg-white box-sh pd-lr-30 pb-60' hidden='{{!(otherActive === "2")}}'>
+      <view class='lh-72 theme-color text-center fs-32'>商场示意图</view>
+      <image src='{{picHost}}shanghu/dingwei.png' class='map-pic gray-border'></image>
+    </view>
+  </view>
+</view>

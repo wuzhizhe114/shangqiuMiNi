@@ -1,0 +1,7 @@
+<!--pages/positionMarket/positionMarket.wxml-->
+<view class='container position-market'>
+  <p-header />
+  <view class='main'>
+    
+  </view>
+</view>
