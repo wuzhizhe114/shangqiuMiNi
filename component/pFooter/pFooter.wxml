@@ -1,18 +1,18 @@
 <!--component/pFooter/pFooter.wxml-->
 <view class='p-footer d-fl'>
-  <navigator hover-class='none' url='/pages/index/index'>
+  <navigator hover-class='none' url='{{footerActive === "0" ? "" : "/pages/index/index"}}'>
     <button hover-class='hover-active' data-index='0' bindtap="changeItem" class='d-fl fl-col {{footerActive === "0" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "0" ? "icon-yemian-copy" : "icon-shouye" }}'></text>
       <text>首页</text>
     </button>
   </navigator>
-  <navigator hover-class='none' url='/pages/shanghu/shanghu'>
+  <navigator hover-class='none' url='{{footerActive === "1" ? "" : "/pages/shanghu/shanghu"}}'>
     <button hover-class='hover-active' data-index='1' bindtap="changeItem" class='d-fl fl-col {{footerActive === "1" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "1" ? "icon-shanghu" : "icon-shanghu1" }}'></text>
       <text>商户</text>
     </button>
   </navigator>
-  <navigator hover-class='none'>
+  <navigator hover-class='none' url='{{footerActive === "2" ? "" : "/pages/yaoyiyao/yaoyiyao"}}'>
     <button hover-class='hover-active' data-index='2' bindtap="changeItem" class='d-fl fl-col yaoyiyao {{footerActive === "2" ? "active" : "" }}'>
       <text class='iconfont icon-yaoyiyao'></text>
       <text>摇一摇</text>

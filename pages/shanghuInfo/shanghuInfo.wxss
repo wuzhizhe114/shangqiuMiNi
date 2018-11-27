@@ -13,8 +13,8 @@
 /* 简介 */
 .other-default .intro .content {
   padding: 26rpx 50rpx;
-  background: url('https://clueless.gitee.io/shangqiuimages/shanghu/mohu_bg.png') no-repeat center center;
-  background-size: 100% 100%;
+  /* background: url('https://clueless.gitee.io/shangqiuimages/shanghu/mohu_bg.png') no-repeat center center;
+  background-size: 100% 100%; */
   border-color: #f29e2e;
 }
 .other-default .product-recom .nav {
@@ -29,6 +29,9 @@
 }
 .other-default .product-recom .product-list .item {
   border-bottom-color: #ccc;
+}
+.other-default .product-recom .product-list .item:last-child {
+  border-bottom: none;
 }
 .other-default .product-recom .product-list .item-pic {
   width: 170rpx;
@@ -61,4 +64,19 @@
 /* 地图 其他信息 */
 .other-map .map-pic {
   height: 404rpx;
+}
+
+/* 投诉弹窗 */
+.tousu-box {
+  width: 90vw;
+  padding: 40rpx;
+  background: url('https://clueless.gitee.io/shangqiuimages/shanghu/phone-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.tousu-box .phone {
+  padding: 10rpx 20rpx;
+  border-color: #f29e2e;
+}
+.tousu-box .van-button--normal {
+  width: 160rpx;
 }

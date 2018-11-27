@@ -1,0 +1,13 @@
+/* pages/productIntro/productIntro.wxss */
+
+.basic-info .pic {
+  height: 330rpx;
+}
+.other-info .info {
+  padding: 20rpx 30rpx;
+  border-color: #f29e2e;
+}
+.zizhi .pic {
+  width: 355rpx;
+  height: 460rpx;
+}

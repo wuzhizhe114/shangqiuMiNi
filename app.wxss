@@ -82,10 +82,13 @@ button::after {
 .main {
   overflow-y: scroll;
   /* padding-bottom: 60rpx; */
-  margin-bottom: -70rpx;
+  margin-bottom: -72rpx;
 }
 
 /* 底部提示 */
+.page-end {
+  padding: 30rpx 46rpx;
+}
 .page-end .line {
   height: 0;
   border-bottom: 1px solid #ddd;
@@ -93,8 +96,15 @@ button::after {
 /* 底部提示
 <view class='page-end pd-30 color-gray d-fl al-center'>
   <text class='line fl-1'></text>
-  <text class='mlr-10'>我也是有底线的</text>
+  <text class='mlr-10'>我是有底线的</text>
   <text class='line fl-1'></text>
+</view> */
+
+/* 底部返回按钮 
+<view class='page-back-btn bg-white pd-30'>
+  <navigator open-type='navigateBack'>
+    <van-button type='primary'>返回</van-button>
+  </navigator>
 </view> */
 
 

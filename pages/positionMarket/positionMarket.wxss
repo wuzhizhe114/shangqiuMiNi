@@ -1,1 +1,18 @@
 /* pages/positionMarket/positionMarket.wxss */
+.position-market {
+  padding: 35rpx 30rpx;
+}
+.position-market .card-rating {
+  height: 248rpx;
+}
+.market-map .map-pic {
+  height: 274rpx;
+}
+.market-info .item {
+  border-bottom-color: #ddd;
+}
+.market-info .item-img {
+  /* flex-basis: 172rpx; */
+  width: 172rpx;
+  height: 130rpx;
+}

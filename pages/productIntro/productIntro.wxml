@@ -1,0 +1,47 @@
+<!--pages/productIntro/productIntro.wxml-->
+<view class='container'>
+  <p-header />
+  <view class='main fl-1 bg-white mb-0'>
+    <view class='lh-72 text-center fs-36'>印度苦瓜</view>
+    <view class='basic-info pd-lr-30 fs-24 lh-42 mb-20'>
+      <view>苦瓜（学名：Momordica charantiaL.）葫芦科苦瓜属植物，一年生攀援状柔弱草本，多分枝；茎、枝被柔毛。卷须纤细，不分歧。叶柄细长；叶片膜质，上面绿色，背面淡绿色，叶脉掌状。雌雄同株。雄花花梗纤细，被微柔毛；苞片绿色，稍有缘毛；花萼裂片卵状披针形，被白色柔毛；花冠黄色，裂片被柔毛；雄蕊离生。雌花单生，花梗被微柔毛；子房纺锤形，柱头膨大。果实纺锤形或圆柱形，多瘤皱，成熟后橙黄色。种子长圆形，两面有刻纹。花、果期5-10月。
+      </view>
+      <view class='mb-26'>苦瓜原产东印度，广泛栽培于世界热带到温带地区。中国南北均普遍栽培。苦瓜果味甘苦，主作蔬菜，也可糖渍；成熟果肉和假种皮也可食用。</view>
+      <image src='{{picHost}}shanghu/kugua.png' class='pic'></image>
+    </view>
+    <view class='other-info pd-lr-30'>
+      <view class='info gray-border mohu-bg-img fs-24'>
+        <view class='d-fl mb-20'>
+          <text class='fl-1'>商品分类：蔬菜</text>
+          <text>现售单价：<text class='color-red'>2.6 元/斤</text> </text>
+        </view>
+        <view class='d-fl mb-20'>
+          <text class='fl-1'>产地：商丘蔬菜瓜果基地</text>
+          <text>上次单价：<text class='theme-color'>2.4 元/斤</text> </text>
+        </view>
+        <view class='d-fl mb-20'>
+          <text class='fl-1'>采摘日期：2018年11月27日</text>
+          <text>对比下降：<text class='color-blue'>0.2 元/斤</text> </text>
+        </view>
+        <view class='mb-20'>供应商：商丘农产品批发部</view>
+        <view class='mb-20'>进货期至：2018年11月27日</view>
+        <view>保存期至：2018年11月27日</view>
+      </view>
+    </view>
+    <view class='zizhi text-center mb-60'>
+      <view class='lh-72'>食品检验资质认证</view>
+      <image src='{{picHost}}shanghu/renzheng.png' class='pic'></image>
+    </view>
+    <!-- 底部提示 -->
+    <view class='page-end pd-30 color-gray d-fl al-center'>
+      <text class='line fl-1'></text>
+      <text class='mlr-10'>我是有底线的</text>
+      <text class='line fl-1'></text>
+    </view>
+    <!-- <view class='page-back-btn bg-white pd-30'>
+      <navigator open-type='navigateBack'>
+        <van-button type='primary'>返回</van-button>
+      </navigator>
+    </view> -->
+  </view>
+</view>

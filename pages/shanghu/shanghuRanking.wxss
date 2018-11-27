@@ -1,0 +1,16 @@
+/* pages/shanghu/shanghuRanking.wxss */
+
+.ranking-header {
+  background-color: #e5e5e5;
+  line-height: 60rpx;
+}
+.rank-item {
+  line-height: 58rpx;
+  text-align: center;
+}
+.rank-item:nth-child(even) {
+  background-color: #fdf1e0;
+}
+.rank-left {
+  width: 200rpx;
+}

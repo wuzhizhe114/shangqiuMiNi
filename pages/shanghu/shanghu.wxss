@@ -57,7 +57,7 @@
 }
 .shanghu-list .list-item > image {
   width: 205rpx;
-  height: 168rpx;
+  height: 180rpx;
 }
 
 /* 商品类别弹出层 */

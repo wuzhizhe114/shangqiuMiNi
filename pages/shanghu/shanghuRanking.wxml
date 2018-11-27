@@ -1,0 +1,78 @@
+<!--pages/shanghu/shanghuRanking.wxml-->
+<view class='container'>
+  <p-header></p-header>
+  <view class='main fl-1 mb-0 bg-white'>
+    <view class='ranking-box'>
+      <view class='lh-72 text-center'>2018上半年第三方信用卡APP排行榜
+        <text class='iconfont icon-paihang theme-color'></text>
+      </view>
+      <view class='ranking-header d-fl text-center fs-32'>
+        <text class='rank-left'>排名</text>
+        <text class='fl-1'>名称</text>
+      </view>
+      <view class='ranking-body mb-26'>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+        <view class='rank-item d-fl'>
+          <text class='rank-left'>1</text>
+          <text class='fl-1'>51信用卡管家</text>
+        </view>
+      </view>
+    </view>
+    <view class='btn-box pd-30'>
+      <navigator open-type='navigateBack'>
+        <van-button type='primary'>返回</van-button>
+      </navigator>
+    </view>
+  </view>
+</view>

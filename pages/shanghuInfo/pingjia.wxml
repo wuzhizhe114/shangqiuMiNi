@@ -1,0 +1,17 @@
+<!-- pingjia.wxml -->
+<view class='container'>
+  <p-header />
+  <view class='fl-1 mb-0 d-fl fl-col bg-white'>
+    <view class='img-box fl-1 d-fl al-center jc-center'>
+      <view>
+        <image src='{{picHost}}shanghu/smile.png' class='pingjia-img mb-60'></image>
+        <view class='text-right fs-58 color-666'>感谢评价！</view>
+      </view>
+    </view>
+    <view class='btn-box pd-lr-30 pb-60'>
+      <navigator open-type='navigateBack'>
+      <van-button type='primary'>返回</van-button>
+      </navigator>
+    </view>
+  </view>
+</view>

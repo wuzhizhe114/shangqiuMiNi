@@ -60,7 +60,7 @@
       </view>
       <view class='intro bg-white box-sh pd-lr-30 of-hidden mb-20'>
         <view class='lh-72 theme-color text-center'>简介</view>
-        <view class='content mb-45 gray-border'>
+        <view class='content mb-45 gray-border mohu-bg-img'>
           <view class='mb-20'>本公司从2018年02月05日开始在商丘市雪苑农贸市场经营蔬菜销售生意本公司从2018年02月05日开始在商丘市雪苑农贸市=开始在商丘市雪苑农贸市场经营蔬菜销售生意</view>
           <view>经营范围：蔬菜，果品、菌类、禽蛋</view>
         </view>
@@ -74,7 +74,27 @@
           <text>禽蛋</text>
         </view>
         <view class='product-list'>
-          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>印度苦瓜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
             <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
@@ -94,7 +114,7 @@
               </view>
             </view>
           </navigator>
-          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
             <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
@@ -114,7 +134,7 @@
               </view>
             </view>
           </navigator>
-          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
             <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
@@ -134,7 +154,7 @@
               </view>
             </view>
           </navigator>
-          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
             <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
@@ -154,38 +174,11 @@
               </view>
             </view>
           </navigator>
-          <navigator url='/pages/productCategory/productCategory' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
-            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
-            <view class='fl-1 ml-24'>
-              <view class='d-fl mb-10'>
-                <text class='fl-1'>生菜</text>
-                <text class='color-red'>2.5 元/斤</text>
-              </view>
-              <view class='d-fl mb-10 fs-24'>
-                <text class='fl-1'>分类：蔬菜</text>
-                <text class='color-blue'>产地：商丘瓜果基地</text>
-              </view>
-              <view class='d-fl fs-22'>
-                <text class='fl-1'>
-                  <text class='iconfont icon-shijian theme-color'></text>
-                <text>进货日期：2018/11/26</text>
-                </text>
-                <text>保存方式：冷鲜</text>
-              </view>
-            </view>
-          </navigator>
-
-          <!-- 底部提示 -->
-          <view class='page-end pd-30 color-gray d-fl al-center'>
-            <text class='line fl-1'></text>
-            <text class='mlr-10'>我是有底线的</text>
-            <text class='line fl-1'></text>
-          </view>
         </view>
       </view>
     </view>
     <!-- 评价 其他信息 -->
-    <view class='other-evaluate bg-white box-sh pd-lr-30 pb-60' hidden='{{!(otherActive === "1")}}'>
+    <view class='other-evaluate bg-white pd-lr-30 pb-60' hidden='{{!(otherActive === "1")}}'>
       <view class='lh-72 theme-color text-center fs-32'>您对商户的评价</view>
       <view class='d-fl jc-center pd-tb-26'>
         <van-rate value="{{ valueRate }}" bind:change="rateChange" void-color="#ffd21e" size="28" />
@@ -210,10 +203,10 @@
         </view>
       </view>
       <view class='d-fl mb-45'>
-        <van-button type='primary' class='fl-1'>匿名提交</van-button>
+        <van-button type='primary' class='fl-1' bindtap='openPingjia'>匿名提交</van-button>
       </view>
       <view class='d-fl jc-space-b'>
-        <view class='color-red pr' hover-class='block-active'>
+        <view class='color-red pr' hover-class='block-active' bindtap='showTousuPopup'>
           <text class='iconfont icon-dianhua mr-10'></text>
           <text>投诉电话</text>
         </view>
@@ -224,9 +217,36 @@
       </view>
     </view>
     <!-- 地图 其他信息 -->
-    <view class='other-map bg-white box-sh pd-lr-30 pb-60' hidden='{{!(otherActive === "2")}}'>
+    <view class='other-map bg-white pd-lr-30 pb-60' hidden='{{!(otherActive === "2")}}'>
       <view class='lh-72 theme-color text-center fs-32'>商场示意图</view>
       <image src='{{picHost}}shanghu/dingwei.png' class='map-pic gray-border'></image>
     </view>
+    <!-- 底部返回按钮 -->
+    <!-- <view class='page-back-btn bg-white pd-30'>
+      <navigator open-type='navigateBack'>
+        <van-button type='primary'>返回</van-button>
+      </navigator>
+    </view> -->
+    <!-- 底部提示 -->
+    <view class='page-end color-gray d-fl al-center'>
+      <text class='line fl-1'></text>
+      <text class='mlr-10'>我是有底线的</text>
+      <text class='line fl-1'></text>
+    </view>
   </view>
+  <van-popup show="{{ tousuPopup }}" bind:close="tousuPopupClose">
+    <view class='tousu-box'>
+      <view class='title theme-color text-center mb-35 fs-32'>
+        <text class='iconfont icon-dianhua fs-32'></text>
+        <text>是否直接拨打投诉电话</text>
+      </view>
+      <view class='d-fl jc-center mb-35'>
+        <text class='phone gray-border'>07532235698</text>
+      </view>
+      <view class='d-fl jc-center'>
+        <van-button type='primary' class='mr-32'>拨打</van-button>
+        <van-button class='ml-24' bind:click='tousuPopupClose'>返回</van-button>
+      </view>
+    </view>
+  </van-popup>
 </view>

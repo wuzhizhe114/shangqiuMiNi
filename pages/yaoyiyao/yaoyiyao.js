@@ -1,11 +1,11 @@
-// pages/positionMarket/positionMarket.js
+// pages/yaoyiyao/yaoyiyao.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    picHost: 'https://clueless.gitee.io/shangqiuimages/'
+    picHost: 'http://clueless.gitee.io/shangqiuimages/',
   },
 
   /**

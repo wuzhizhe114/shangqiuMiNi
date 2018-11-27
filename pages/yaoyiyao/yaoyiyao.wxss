@@ -1,0 +1,30 @@
+/* pages/yaoyiyao/yaoyiyao.wxss */
+.main {
+  background-color: #2e3132;
+}
+.yaoyiyao-icon > .pic {
+  width: 276rpx;
+  height: 334rpx;
+}
+
+/* 第一步 */
+.yaoyiyao1 .shangjia {
+  margin-bottom: 178rpx;
+  font-size: 40rpx;
+}
+.yaoyiyao1 .shangjia .iconfont {
+  font-size: 130rpx;
+}
+
+/* 第二步 */
+.yaoyiyao2 .shangjia-list .list-item {
+  padding: 26rpx;
+}
+.yaoyiyao2 .list-item .item-pic {
+  width: 210rpx;
+  height: 192rpx;
+}
+.yaoyiyao2 .yaoyiyao-icon > .pic {
+  width: 126rpx;
+  height: 152rpx;
+}

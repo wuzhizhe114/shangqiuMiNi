@@ -1,11 +1,11 @@
-// pages/positionMarket/positionMarket.js
+// pages/productIntro/productIntro.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    picHost: 'https://clueless.gitee.io/shangqiuimages/'
+    picHost: 'https://clueless.gitee.io/shangqiuimages/',
   },
 
   /**

@@ -1,4 +1,4 @@
-// pages/positionMarket/positionMarket.js
+// pages/shanghuInfo/shanghuInfo.js
 Page({
 
   /**

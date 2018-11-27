@@ -7,15 +7,36 @@ Page({
   data: {
     picHost: 'https://clueless.gitee.io/shangqiuimages/',
     valueRate: 0,
-    otherActive: '0'
+    otherActive: '0',
+    tousuPopup: true
   },
+  // 评分
   rateChange(){
     console.log(this.data.valueRate)
   },
+  // 切换显示其他信息
   otherChange(e){
     // console.log(e)
     this.setData({
       otherActive: e.currentTarget.dataset['otherIndex']
+    })
+  },
+  // 打开评价反馈页面
+  openPingjia(){
+    wx.navigateTo({
+      url: 'pingjia',
+    })
+  },
+  // 展示投诉弹窗
+  showTousuPopup() {
+    this.setData({
+      tousuPopup: true
+    })
+  },
+  // 弹出层关闭方法
+  tousuPopupClose() {
+    this.setData({
+      tousuPopup: false
     })
   },
 

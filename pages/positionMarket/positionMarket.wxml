@@ -1,7 +1,159 @@
 <!--pages/positionMarket/positionMarket.wxml-->
-<view class='container position-market'>
+<view class='container'>
   <p-header />
-  <view class='main'>
-    
+  <view class='main fl-1 mb-0'>
+    <!-- 市场定位 -->
+    <view class="position-market bg-white mb-20 box-sh">
+      <view class='mb-26'>
+        <text class='iconfont icon-dingweiweizhi theme-color'></text>
+        <text class='mlr-10'>当前：</text>
+        <!-- <navigator></navigator> -->
+        <navigator class='dis-in theme-color theme-b-b pr' hover-class='none'>雪苑农资批发市场</navigator>
+      </view>
+      <view class='card-rating mb-26 pr'>
+        <image src='{{picHost}}index/market.png'></image>
+        <view class='block-mask pd-lr-20'>
+          <text class='color-white'>市场信用评级：</text>
+          <view class='dis-in theme-color'>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-stars"></text>
+            <text class="iconfont icon-xingxingxianmiao"></text>
+          </view>
+        </view>
+      </view>
+      <view>地址：河南省商丘市梁园区货场商丘市长征医院东北</view>
+    </view>
+    <!-- 附近市场 -->
+    <view class='market-map bg-white box-sh pd-lr-30 pb-30 mb-20'>
+      <view class='lh-72 theme-color text-center fs-32'>附近的市场</view>
+      <image src='{{picHost}}shanghu/dingwei.png' class='map-pic gray-border'></image>
+    </view>
+    <!-- 附近市场详细 -->
+    <view class='market-info bg-white box-sh pd-lr-30'>
+      <navigator class='item d-fl pd-tb-26 theme-b-b pr' url='/pages/index/index' hover-class='block-active'>
+        <image class='item-img' src='{{picHost}}index/first_pic.png'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1'>农资大市场</text>
+            <text class='fs-22 color-blue'>路线 <text class='iconfont icon-daohang fs-24'></text></text>
+          </view>
+          <view class='mb-10'>
+            <text class='fs-24'>信用评分：<text class='theme-color'>
+                <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+            </text>
+          </view>
+          <view class='d-fl fs-22'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color fs-22'></text> 华商大道西段169号附近</text>
+            <text class='ml-24'>距离：<text class='theme-color'>4.6 km</text></text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl pd-tb-26 theme-b-b'>
+        <image class='item-img' src='{{picHost}}index/first_pic.png'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1'>农资大市场</text>
+            <text class='fs-22 color-blue'>路线 <text class='iconfont icon-daohang fs-24'></text></text>
+          </view>
+          <view class='mb-10'>
+            <text class='fs-24'>信用评分：<text class='theme-color'>
+                <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+            </text>
+          </view>
+          <view class='d-fl fs-22'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color fs-22'></text> 华商大道西段169号附近</text>
+            <text class='ml-24'>距离：<text class='theme-color'>4.6 km</text></text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl pd-tb-26 theme-b-b'>
+        <image class='item-img' src='{{picHost}}index/first_pic.png'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1'>农资大市场</text>
+            <text class='fs-22 color-blue'>路线 <text class='iconfont icon-daohang fs-24'></text></text>
+          </view>
+          <view class='mb-10'>
+            <text class='fs-24'>信用评分：<text class='theme-color'>
+                <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+            </text>
+          </view>
+          <view class='d-fl fs-22'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color fs-22'></text> 华商大道西段169号附近</text>
+            <text class='ml-24'>距离：<text class='theme-color'>4.6 km</text></text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl pd-tb-26 theme-b-b'>
+        <image class='item-img' src='{{picHost}}index/first_pic.png'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1'>农资大市场</text>
+            <text class='fs-22 color-blue'>路线 <text class='iconfont icon-daohang fs-24'></text></text>
+          </view>
+          <view class='mb-10'>
+            <text class='fs-24'>信用评分：<text class='theme-color'>
+                <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+            </text>
+          </view>
+          <view class='d-fl fs-22'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color fs-22'></text> 华商大道西段169号附近</text>
+            <text class='ml-24'>距离：<text class='theme-color'>4.6 km</text></text>
+          </view>
+        </view>
+      </navigator>
+      <navigator class='item d-fl pd-tb-26 theme-b-b'>
+        <image class='item-img' src='{{picHost}}index/first_pic.png'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1'>农资大市场</text>
+            <text class='fs-22 color-blue'>路线 <text class='iconfont icon-daohang fs-24'></text></text>
+          </view>
+          <view class='mb-10'>
+            <text class='fs-24'>信用评分：<text class='theme-color'>
+                <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-stars'></text>
+            <text class='iconfont icon-xingxingxianmiao'></text>
+            </text>
+            </text>
+          </view>
+          <view class='d-fl fs-22'>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color fs-22'></text> 华商大道西段169号附近</text>
+            <text class='ml-24'>距离：<text class='theme-color'>4.6 km</text></text>
+          </view>
+        </view>
+      </navigator>
+
+      <!-- 底部提示 -->
+      <view class='page-end pd-30 color-gray d-fl al-center'>
+        <text class='line fl-1'></text>
+        <text class='mlr-10'>我是有底线的</text>
+        <text class='line fl-1'></text>
+      </view>
+    </view>
   </view>
 </view>

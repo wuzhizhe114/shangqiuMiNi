@@ -31,7 +31,7 @@
       <van-button type="primary" class=''>按信用等级</van-button>
       <van-button type="default" class=' ml-24 theme-color'>按价格高低</van-button>
     </view>
-    <view class='product-list bg-white box-sh pd-lr-30'>
+    <view class='product-list bg-white pd-lr-30'>
       <navigator url='/pages/shanghuInfo/shanghuInfo' class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
         <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
         <view class='fl-1 ml-24'>
@@ -147,13 +147,12 @@
           </view>
         </view>
       </navigator>
-
-      <!-- 底部提示 -->
-      <view class='page-end pd-30 color-gray d-fl al-center'>
-        <text class='line fl-1'></text>
-        <text class='mlr-10'>我是有底线的</text>
-        <text class='line fl-1'></text>
-      </view>
+    </view>
+    <!-- 底部提示 -->
+    <view class='page-end color-gray d-fl al-center'>
+      <text class='line fl-1'></text>
+      <text class='mlr-10'>我是有底线的</text>
+      <text class='line fl-1'></text>
     </view>
   </view>
 </view>

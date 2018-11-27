@@ -1,0 +1,5 @@
+/* pingjia.wxss */
+.pingjia-img {
+  width: 333rpx;
+  height: 315rpx;
+}

@@ -19,7 +19,8 @@
       <view class='mb-26'>
         <text class='iconfont icon-dingweiweizhi theme-color'></text>
         <text class='mlr-10'>当前：</text>
-        <view class='dis-in theme-color theme-b-b pr' hover-class='hover-active'>雪苑农资批发市场</view>
+        <!-- <navigator></navigator> -->
+        <navigator class='dis-in theme-color theme-b-b pr' hover-class='block-active' url='/pages/positionMarket/positionMarket'>雪苑农资批发市场</navigator>
       </view>
       <view class='card-rating mb-26 pr'>
         <image src='http://clueless.gitee.io/shangqiuimages/index/market.png'></image>
@@ -184,7 +185,7 @@
       </view>
     </view>
     <!-- 信用商品 -->
-    <view class='credit-product bg-white mb-26 box-sh pd-lr-30 of-hidden pb-20'>
+    <view class='credit-product bg-white mb-35 box-sh pd-lr-30 of-hidden pb-30'>
       <view class='lh-72 text-center theme-color'>信用商品</view>
       <van-row wx:for="{{productData}}" wx:key="{{index}}" wx:for-index="rowIndex" wx:for-item="rowItem">
         <van-col span="8" class="text-center" wx:for="{{rowItem}}" wx:key="{{item.text}}">
