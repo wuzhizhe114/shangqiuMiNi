@@ -1,0 +1,89 @@
+<!--pages/geren/geren.wxml-->
+<view class='container geren'>
+  <view class='main fl-1'>
+    <view class='user-info d-fl al-center pd-lr-30'>
+      <image src='{{picHost}}geren/user-icon.png' class='user-icon br-half box-sh-all'></image>
+      <view class='info fl-1 ml-24 color-white'>
+        <view class='fs-36 mb-20'>
+          <text>卡卡</text>
+        </view>
+        <view class=''>
+          <text class='iconfont icon-taiyang theme-color mr-10 fs-24'></text>小白生活家</view>
+      </view>
+      <image src='{{picHost}}geren/erweima.png' class='erweima box-sh-all' bindtap='showErweimaPopup'></image>
+    </view>
+    <view class='bg-white pd-lr-30 mb-20 box-sh'>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-pingjia theme-color fs-24 d-fl al-center'></text>
+        <text class='ml-24'>我的评价</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-jianyi1 color-blue1 d-fl al-center'></text>
+        <text class='ml-20'>投诉建议</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+    </view>
+    <view class='bg-white pd-lr-30 mb-20 box-sh'>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-shangpin-tianchong color-red d-fl al-center'></text>
+        <text class='ml-20'>关注商品</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-shangdian color-blue2 d-fl al-center'></text>
+        <text class='ml-20'>关注商户</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-zuji color-pink d-fl al-center'></text>
+        <text class='ml-20'>我的足迹</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-dizhi color-purple d-fl al-center'></text>
+        <text class='ml-20'>地址管理</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+    </view>
+    <view class='bg-white pd-lr-30 xitong of-hidden'>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-kefu color-green d-fl al-center'></text>
+        <text class='ml-20'>在线客服</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-bangzhu color-blue d-fl al-center'></text>
+        <text class='ml-20'>帮助中心</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+      <navigator class='user-item d-fl theme-b-b'>
+        <text class='iconfont icon-xitong color-gray d-fl al-center'></text>
+        <text class='ml-20'>系统设置</text>
+        <text class='fl-1 text-right'></text>
+        <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
+      </navigator>
+    </view>
+    <!-- 底部提示 -->
+    <view class='page-end pd-30 color-gray d-fl al-center mb-60'>
+      <text class='line fl-1'></text>
+      <text class='mlr-10'>我是有底线的</text>
+      <text class='line fl-1'></text>
+    </view>
+    <!-- 二维码弹窗 -->
+    <van-popup show="{{ showPopup }}" bind:close="erweimaPopupClose">
+      <view class='erweima-box'>
+        <image src='{{picHost}}geren/erweima.png'></image>
+      </view>
+    </van-popup>
+  </view>
+  <p-footer footerActive="4" />
+</view>

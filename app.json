@@ -1,10 +1,12 @@
 {
   "pages": [
-    "pages/shanghuInfo/shanghuInfo",
     "pages/index/index",
-    "pages/productIntro/productIntro",
-    "pages/yaoyiyao/yaoyiyao",
     "pages/shanghu/shanghu",
+    "pages/yaoyiyao/yaoyiyao",
+    "pages/cailanzi/cailanzi",
+    "pages/geren/geren",
+    "pages/shanghuInfo/shanghuInfo",
+    "pages/productIntro/productIntro",
     "pages/positionMarket/positionMarket",
     "pages/productCategory/productCategory",
     "pages/logs/logs"

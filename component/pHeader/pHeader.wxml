@@ -1,6 +1,6 @@
 <!--component/pHeader/pHeader.wxml-->
 <view class='p-header theme-bg color-white d-fl al-center'>
-  <button hover-class='hover-active'>
+  <button hover-class='hover-active' bindtap='_saoma'>
     <icon class='iconfont icon-saoma d-fl al-center color-white'></icon>
   </button>
   <view class='search-box pr fl-1'>

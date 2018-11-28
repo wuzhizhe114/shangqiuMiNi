@@ -1,0 +1,47 @@
+/* pages/cailanzi/cailanzi.wxss */
+
+.product-item {
+  border-bottom-color: #eee;
+}
+.product-item:last-of-type {
+  border-bottom: none;
+}
+.product-item .item-pic {
+  width: 172rpx;
+  height: 128rpx;
+}
+
+/* 猜你喜欢 */
+.recom-box {
+  overflow: hidden
+}
+
+.recom-box .recom-item {
+  float: left;
+  width: 50%;
+}
+.recom-box .recom-item:nth-child(odd) {
+  padding-right: 16rpx;
+}
+.recom-box .recom-item:nth-child(even) {
+  padding-left: 16rpx;
+}
+.recom-box .recom-item .item-pic {
+  height: 242rpx;
+}
+
+/* 提交订单 */
+.submit-product {
+  margin-bottom: -70rpx;
+  padding-bottom: 80rpx;
+  
+}
+.submit-product > view {
+  padding: 16rpx 30rpx;
+  border-bottom-color: #eee;
+}
+.submit-product .van-button--normal {
+  height: 54rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+}

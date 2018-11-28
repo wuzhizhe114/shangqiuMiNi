@@ -1,4 +1,4 @@
-// pages/shanghuInfo/shanghuInfo.js
+// pages/cailanzi/cailanzi.js
 Page({
 
   /**
@@ -6,44 +6,13 @@ Page({
    */
   data: {
     picHost: 'https://clueless.gitee.io/shangqiuimages/',
-    valueRate: 0,
-    otherActive: '0',
-    tousuPopup: false
+    productItem: true,
   },
-  // 评分
-  rateChange(){
-    console.log(this.data.valueRate)
-  },
-  // 切换显示其他信息
-  otherChange(e){
-    // console.log(e)
+  // 商品单项选择
+  productItemChange(e){
+    console.log(e);
     this.setData({
-      otherActive: e.currentTarget.dataset['otherIndex']
-    })
-  },
-  // 打开评价反馈页面
-  openPingjia(){
-    wx.navigateTo({
-      url: './pingjia',
-    })
-  },
-  // 展示投诉弹窗
-  showTousuPopup() {
-    this.setData({
-      tousuPopup: true
-    })
-  },
-  // 弹出层关闭方法
-  tousuPopupClose() {
-    this.setData({
-      tousuPopup: false
-    })
-  },
-  // 拨打电话
-  dialNumber(){
-    this.tousuPopupClose();
-    wx.makePhoneCall({
-      phoneNumber: '07532235698'
+      productItem: !this.data.productItem
     })
   },
 

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "p-footer": "/component/pFooter/pFooter",
+    "van-checkbox": "vant-weapp/checkbox/index",
+    "van-button": "vant-weapp/button/index"
+  }
+}

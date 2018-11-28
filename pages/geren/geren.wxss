@@ -1,0 +1,32 @@
+/* pages/geren/geren.wxss */
+.user-info {
+  height: 306rpx;
+  background: url('https://clueless.gitee.io/shangqiuimages/geren/geren-bg.png') no-repeat;
+  background-size: cover;
+}
+.user-info .user-icon {
+  width: 140rpx;
+  height: 140rpx;
+}
+.user-info .erweima {
+  width: 104rpx;
+  height: 104rpx;
+}
+
+.user-item {
+  padding: 20rpx 10rpx;
+  border-bottom-color: #eee
+}
+.user-item:last-child {
+  border-bottom: none;
+}
+.xitong .user-item:last-child {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 100rpx;
+}
+
+/* 二维码弹窗 */
+.erweima-box > image {
+  width: 446rpx;
+  height: 446rpx;
+}

@@ -18,13 +18,13 @@
       <text>摇一摇</text>
     </button>
   </navigator>
-  <navigator hover-class='none'>
+  <navigator hover-class='none' url='{{footerActive === "3" ? "" : "/pages/cailanzi/cailanzi"}}'>
     <button hover-class='hover-active' data-index='3' bindtap="changeItem" class='d-fl fl-col {{footerActive === "3" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "3" ? "icon-gouwuche1" : "icon-gouwuche" }}'></text>
       <text>菜篮子</text>
     </button>
   </navigator>
-  <navigator hover-class='none'>
+  <navigator hover-class='none' url='{{footerActive === "4" ? "" : "/pages/geren/geren"}}'>
     <button hover-class='hover-active' data-index='4' bindtap="changeItem" class='d-fl fl-col {{footerActive === "4" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "4" ? "icon-geren1" : "icon-geren" }}'></text>
       <text>个人</text>

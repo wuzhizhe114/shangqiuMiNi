@@ -244,7 +244,7 @@
         <text class='phone gray-border'>07532235698</text>
       </view>
       <view class='d-fl jc-center'>
-        <van-button type='primary' class='mr-32'>拨打</van-button>
+        <van-button type='primary' class='mr-32' bindtap='dialNumber'>拨打</van-button>
         <van-button class='ml-24' bind:click='tousuPopupClose'>返回</van-button>
       </view>
     </view>
