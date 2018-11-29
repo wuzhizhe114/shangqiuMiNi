@@ -173,6 +173,9 @@
   padding: 10rpx 0;
 }
 
+.pb-100 {
+  padding-bottom: 100rpx;
+}
 .pb-60 {
   padding-bottom: 60rpx;
 }

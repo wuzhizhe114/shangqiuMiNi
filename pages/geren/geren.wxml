@@ -19,9 +19,9 @@
         <text class='fl-1 text-right'></text>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
       </navigator>
-      <navigator class='user-item d-fl theme-b-b'>
+      <navigator class='user-item d-fl theme-b-b' url='/pages/myComplaint/myComplaint'>
         <text class='iconfont icon-jianyi1 color-blue1 d-fl al-center'></text>
-        <text class='ml-20'>投诉建议</text>
+        <text class='ml-20'>我的投诉</text>
         <text class='fl-1 text-right'></text>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
       </navigator>
@@ -45,20 +45,20 @@
         <text class='fl-1 text-right'></text>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
       </navigator>
-      <navigator class='user-item d-fl theme-b-b'>
+      <!-- <navigator class='user-item d-fl theme-b-b'>
         <text class='iconfont icon-dizhi color-purple d-fl al-center'></text>
         <text class='ml-20'>地址管理</text>
         <text class='fl-1 text-right'></text>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
-      </navigator>
+      </navigator> -->
     </view>
     <view class='bg-white pd-lr-30 xitong of-hidden'>
-      <navigator class='user-item d-fl theme-b-b'>
+      <!-- <navigator class='user-item d-fl theme-b-b'>
         <text class='iconfont icon-kefu color-green d-fl al-center'></text>
         <text class='ml-20'>在线客服</text>
         <text class='fl-1 text-right'></text>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
-      </navigator>
+      </navigator> -->
       <navigator class='user-item d-fl theme-b-b'>
         <text class='iconfont icon-bangzhu color-blue d-fl al-center'></text>
         <text class='ml-20'>帮助中心</text>

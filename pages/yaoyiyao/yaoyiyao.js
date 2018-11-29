@@ -6,6 +6,12 @@ Page({
    */
   data: {
     picHost: 'http://clueless.gitee.io/shangqiuimages/',
+    showResult: false,
+  },
+  changeResult(){
+    this.setData({
+      showResult: true
+    })
   },
 
   /**

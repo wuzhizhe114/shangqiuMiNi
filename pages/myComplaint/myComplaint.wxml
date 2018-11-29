@@ -1,0 +1,98 @@
+<!--pages/myComplaint/myComplaint.wxml-->
+<view class='container'>
+  <view class='main fl-1 bg-white'>
+    <van-tabs active="{{ tabActive }}" bind:change="onTabChange" color="#f29e2e" line-width="92">
+      <van-tab title="投诉时间">
+        <view class='complaint-list pd-lr-30 pb-100'>
+          <navigator class='list-item d-fl pd-tb-20 theme-b-b' wx:for="{{pageData}}" wx:key="{{index}}">
+            <image src='{{item.picUrl}}' class='item-pic br-half'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl'>
+                <view class='title fl-1'>
+                  <text>{{item.title}}</text>
+                </view>
+                <view class='color-blue fs-22 text-right d-fl al-center'><text class='iconfont icon-kefu fs-24'></text><text>在线投诉</text></view>
+              </view>
+              <view class='text-right'>
+                <text class='color-gray fs-22'>{{item.time}}</text>
+              </view>
+              <view class='d-fl'>
+                <view class='fl-1 fs-22'>
+                  <text>买家评分：</text>
+                  <text class='theme-color'>
+                    <text class='iconfont icon-stars fs24' wx:for="{{item.score}}" wx:key="*this"></text>
+                  <text class='iconfont icon-xingxingxianmiao' wx:for="{{5 - item.score}}" wx:key="*this"></text>
+                  </text>
+                </view>
+                <view class='fs-22'>
+                  <text class='iconfont icon-jianyi1 theme-color mr-10'></text>
+                  <text>投诉类型：</text>
+                  <text class='color-blue'>{{item.type}}</text>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </van-tab>
+      <van-tab title="商户名称">
+        <view class='complaint-list pd-lr-30 pb-100'>
+          <navigator class='list-item d-fl pd-tb-20 theme-b-b' wx:for="{{pageData}}" wx:key="{{index}}">
+            <image src='{{item.picUrl}}' class='item-pic br-half'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <view class='title fl-1'>
+                  <text>{{item.title}}</text>
+                </view>
+                <text class='color-gray fs-22'>{{item.time}}</text>
+              </view>
+              <view class='d-fl'>
+                <view class='fl-1 fs-22'>
+                  <text>买家评分：</text>
+                  <text class='theme-color'>
+                    <text class='iconfont icon-stars fs24' wx:for="{{item.score}}" wx:key="*this"></text>
+                  <text class='iconfont icon-xingxingxianmiao' wx:for="{{5 - item.score}}" wx:key="*this"></text>
+                  </text>
+                </view>
+                <view class='fs-22'>
+                  <text class='iconfont icon-jianyi1 theme-color mr-10'></text>
+                  <text>投诉类型：</text>
+                  <text class='color-blue'>{{item.type}}</text>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </van-tab>
+      <van-tab title="投诉类型">
+        <view class='complaint-list pd-lr-30 pb-100'>
+          <navigator class='list-item d-fl pd-tb-20 theme-b-b' wx:for="{{pageData}}" wx:key="{{index}}">
+            <image src='{{item.picUrl}}' class='item-pic br-half'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <view class='title fl-1'>
+                  <text>{{item.title}}</text>
+                </view>
+                <text class='color-gray fs-22'>{{item.time}}</text>
+              </view>
+              <view class='d-fl'>
+                <view class='fl-1 fs-22'>
+                  <text>买家评分：</text>
+                  <text class='theme-color'>
+                    <text class='iconfont icon-stars fs24' wx:for="{{item.score}}" wx:key="*this"></text>
+                  <text class='iconfont icon-xingxingxianmiao' wx:for="{{5 - item.score}}" wx:key="*this"></text>
+                  </text>
+                </view>
+                <view class='fs-22'>
+                  <text class='iconfont icon-jianyi1 theme-color mr-10'></text>
+                  <text>投诉类型：</text>
+                  <text class='color-blue'>{{item.type}}</text>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+  <p-footer footerActive="4" />
+</view>

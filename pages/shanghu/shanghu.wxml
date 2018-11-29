@@ -8,21 +8,15 @@
         <view class='scroll-box'>
           <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
             <image src='{{picHost}}index/first_pic.png'></image>
-            <view class='item-tip d-fl al-center'>
-              <text>信用排行</text>
-            </view>
           </navigator>
           <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
             <image src='{{picHost}}index/first_pic.png'></image>
             <view class='item-tip d-fl al-center'>
-              <text>模范商户</text>
+              <text>信用排行 ></text>
             </view>
           </navigator>
           <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
             <image src='{{picHost}}index/first_pic.png'></image>
-            <view class='item-tip d-fl al-center'>
-              <text>卫生标兵</text>
-            </view>
           </navigator>
         </view>
       </view>

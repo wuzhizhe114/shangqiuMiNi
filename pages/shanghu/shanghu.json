@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "商户",  
   "usingComponents": {
     "p-header": "/component/pHeader/pHeader",
     "p-footer": "/component/pFooter/pFooter",

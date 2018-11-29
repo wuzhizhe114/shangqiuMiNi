@@ -1,7 +1,9 @@
 {
   "pages": [
+    "pages/myComplaint/myComplaint",
     "pages/geren/geren",
     "pages/index/index",
+    "pages/shanghu/shanghuRanking",
     "pages/shanghu/shanghu",
     "pages/yaoyiyao/yaoyiyao",
     "pages/cailanzi/cailanzi",
@@ -13,8 +15,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#f29e2e",
+    "navigationBarTitleText": "消费者",
+    "navigationBarTextStyle": "#fff"
   }
 }

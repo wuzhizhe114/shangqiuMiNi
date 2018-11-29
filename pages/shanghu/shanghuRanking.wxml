@@ -6,66 +6,111 @@
       <view class='lh-72 text-center'>2018上半年第三方信用卡APP排行榜
         <text class='iconfont icon-paihang theme-color'></text>
       </view>
-      <view class='ranking-header d-fl text-center fs-32'>
-        <text class='rank-left'>排名</text>
-        <text class='fl-1'>名称</text>
+      <view class='ranking-header d-fl text-center fs-24 pd-lr-30'>
+        <text>排名</text>
+        <text class='fl-1'>商户名称</text>
+        <text class='fl-1'>所在分区</text>
+        <text class='fl-1'>档口编号</text>
+        <text>信用评级</text>
       </view>
       <view class='ranking-body mb-26'>
         <view class='rank-item d-fl'>
           <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='fl-1'>李三熟食</text>
+          <text class='fl-1'>熟食区</text>
+          <text class='fl-1'>A301</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>100</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>2</text>
+          <text class='fl-1'>钱大妈烤鸭</text>
+          <text class='fl-1'>熟食区</text>
+          <text class='fl-1'>A214</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>98</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>3</text>
+          <text class='fl-1'>莲花山酱油</text>
+          <text class='fl-1'>调料区</text>
+          <text class='fl-1'>B65</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>98</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>4</text>
+          <text class='fl-1'>爽口野菌</text>
+          <text class='fl-1'>蔬菜区</text>
+          <text class='fl-1'>A501</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>97</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>5</text>
+          <text class='fl-1'>开心鲜蔬</text>
+          <text class='fl-1'>蔬菜区</text>
+          <text class='fl-1'>C102</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>96</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>6</text>
+          <text class='fl-1'>真果味</text>
+          <text class='fl-1'>水果区</text>
+          <text class='fl-1'>C607</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>94</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>7</text>
+          <text class='fl-1'>小刘芒果</text>
+          <text class='fl-1'>水果区</text>
+          <text class='fl-1'>D604</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>93</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>8</text>
+          <text class='fl-1'>新疆味美葡萄</text>
+          <text class='fl-1'>水果区</text>
+          <text class='fl-1'>D32</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>92</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>9</text>
+          <text class='fl-1'>山西陈醋</text>
+          <text class='fl-1'>调料区</text>
+          <text class='fl-1'>G02</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>92</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>10</text>
+          <text class='fl-1'>一碗香芝麻油</text>
+          <text class='fl-1'>调料区</text>
+          <text class='fl-1'>B201</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>90</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>11</text>
+          <text class='fl-1'>郭嫂土鸡土鹅</text>
+          <text class='fl-1'>熟食区</text>
+          <text class='fl-1'>A311</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>89</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>12</text>
+          <text class='fl-1'>鄱阳湖大闸蟹</text>
+          <text class='fl-1'>水产区</text>
+          <text class='fl-1'>C206</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>88</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>13</text>
+          <text class='fl-1'>张记三文鱼</text>
+          <text class='fl-1'>水产区</text>
+          <text class='fl-1'>C307</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>86</text>
         </view>
         <view class='rank-item d-fl'>
-          <text class='rank-left'>1</text>
-          <text class='fl-1'>51信用卡管家</text>
+          <text class='rank-left'>14</text>
+          <text class='fl-1'>东北大米</text>
+          <text class='fl-1'>粮油区</text>
+          <text class='fl-1'>E204</text>
+          <text class='rank-right'><text class='iconfont icon-stars theme-color'></text>85</text>
         </view>
       </view>
     </view>

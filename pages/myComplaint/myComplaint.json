@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的投诉",
+  "usingComponents": {
+    "p-footer": "/component/pFooter/pFooter",
+    "van-tab": "vant-weapp/tab/index",
+    "van-tabs": "vant-weapp/tabs/index"
+  }
+}

@@ -7,10 +7,14 @@
 .rank-item {
   line-height: 58rpx;
   text-align: center;
+  padding: 0 30rpx;
 }
 .rank-item:nth-child(even) {
   background-color: #fdf1e0;
 }
-.rank-left {
-  width: 200rpx;
+.rank-item .rank-left {
+  width: 48rpx;
+}
+.rank-item .rank-right {
+  width: 96rpx;
 }

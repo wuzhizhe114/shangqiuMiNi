@@ -1,23 +1,23 @@
 <!--pages/yaoyiyao/yaoyiyao.wxml-->
 <view class='container'>
   <p-header />
-  <view class='main yaoyiyao1 fl-1 d-fl fl-col' hidden='{{ false }}'>
+  <view class='main yaoyiyao1 fl-1 d-fl fl-col' hidden='{{ showResult }}'>
     <view class='yaoyiyao-icon fl-1 d-fl al-center jc-center'>
-      <image src='{{picHost}}yaoyiyao/yaoyiyao.png' class='pic'></image>
+      <image src='{{picHost}}yaoyiyao/yaoyiyao.png' bindtap='changeResult' class='pic'></image>
     </view>
     <view class='shangjia text-center'>
       <view>
         <text class='iconfont icon-ren theme-color'></text>
       </view>
-      <view class='color-gray'>商家</view>
+      <view class='color-gray'>雪苑农资批发市场</view>
     </view>
   </view>
-  <view class='main yaoyiyao2 fl-1 mb-0' hidden='{{true}}'>
+  <view class='main yaoyiyao2 fl-1' hidden='{{ !showResult }}'>
     <view class='shangjia text-center pd-30'>
       <view>
         <text class='iconfont icon-ren theme-color fs-58'></text>
       </view>
-      <view class='color-gray fs-24'>商家</view>
+      <view class='color-gray fs-24'>雪苑农资批发市场</view>
     </view>
     <view class='shangjia-list pd-lr-30'>
       <navigator class='list-item bg-white mb-20 d-fl pr' hover-class='block-active' url="/pages/shanghuInfo/shanghuInfo">

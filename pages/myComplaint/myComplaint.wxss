@@ -1,0 +1,16 @@
+/* pages/myComplaint/myComplaint.wxss */
+.container .van-tab--active {
+  color: #f29e2e;
+}
+
+.complaint-list .item-pic {
+  width: 94rpx;
+  height: 94rpx;
+}
+.complaint-list .list-item {
+  border-bottom-color: #eee
+}
+
+.van-tabs__wrap.van-hairline--top-bottom {
+  position: fixed;
+}

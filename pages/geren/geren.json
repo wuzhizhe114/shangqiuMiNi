@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "个人",  
   "usingComponents": {
     "p-footer": "/component/pFooter/pFooter",
     "van-popup": "vant-weapp/popup/index"
