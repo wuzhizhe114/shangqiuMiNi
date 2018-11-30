@@ -1,0 +1,43 @@
+/* pages/onlineComplaint/onlineComplaint.wxss */
+.shanghu-info .info {
+  padding: 26rpx 20rpx;
+}
+.shanghu-info .info .info-pic {
+  width: 210rpx;
+  height: 186rpx;
+}
+
+.message-list .kefu {
+  padding-left: 30rpx;
+}
+.message-list .item {
+  padding: 25rpx 28rpx;
+  border-radius: 6rpx;
+}
+
+.footer {
+  padding: 25rpx 30rpx 62rpx;
+}
+.footer .biaoqian .van-button {
+  display: inline-block;
+  width: 170rpx;
+  border-radius: 70rpx;
+  background-color: #ecac57;
+}
+
+.footer .message-box .add {
+  font-size: 70rpx;
+}
+.footer .input-box input {
+  height: 70rpx;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+}
+.footer .input-box .yuyin {
+  position: absolute;
+  top: 49%;
+  right: 20rpx;
+  transform: translateY(-50%);
+  z-index: 10;
+}

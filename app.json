@@ -1,16 +1,19 @@
 {
   "pages": [
-    "pages/myComplaint/myComplaint",
-    "pages/geren/geren",
     "pages/index/index",
-    "pages/shanghu/shanghuRanking",
-    "pages/shanghu/shanghu",
-    "pages/yaoyiyao/yaoyiyao",
-    "pages/cailanzi/cailanzi",
+    "pages/geren/geren",
+    "pages/productCategory/productCategory",
+    "pages/myComplaintInfo/myComplaintInfo",
     "pages/shanghuInfo/shanghuInfo",
+    "pages/complaintSuggest/complaintSuggest",
+    "pages/onlineComplaint/onlineComplaint",
+    "pages/shanghu/shanghu",
     "pages/productIntro/productIntro",
     "pages/positionMarket/positionMarket",
-    "pages/productCategory/productCategory",
+    "pages/yaoyiyao/yaoyiyao",
+    "pages/shanghu/shanghuRanking",
+    "pages/myComplaint/myComplaint",
+    "pages/cailanzi/cailanzi",
     "pages/logs/logs"
   ],
   "window": {

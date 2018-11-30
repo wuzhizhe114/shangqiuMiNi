@@ -1,0 +1,51 @@
+<!--pages/complaintSuggest/complaintSuggest.wxml-->
+<view class='container'>
+  <view class='main fl-1 mb-0 pd-lr-30 complaint bg-white'>
+    <view class='lh-72 text-center theme-color'>
+      <text>您对商户的投诉</text>
+    </view>
+    <view class='d-fl mb-35'>
+      <text>商户名称：</text>
+      <text class='fl-1'>何记水产</text>
+    </view>
+    <view class='d-fl mb-35'>
+      <text>投诉日期：</text>
+      <text class='fl-1 color-gray'>2018年11月26日</text>
+    </view>
+    <view class='d-fl mb-35 type'>
+      <text>投诉类型：</text>
+      <van-button type='default' catchtap='showTousuType'>{{tousuText}}
+        <text class='iconfont icon-sanjiaoxing'></text>
+      </van-button>
+    </view>
+    <view class='d-fl mb-35 type'>
+      <text>详细描述：</text>
+      <textarea class='fl-1 bg-f3 gray-border pd-30' maxlength="270"></textarea>
+    </view>
+    <view class='d-fl mb-60 upload'>
+      <text>上传附件：</text>
+      <view class='fl-1 d-fl'>
+        <view hover-class='block-active' class='img d-fl al-center jc-center gray-border pr'>
+          <text class='iconfont icon-camera color-gray'></text>
+        </view>
+        <view class='tips fl-1 fs-20 color-gray'>
+          <text>请上传需要投诉问题的图片，</text>
+          <view>单张图片大小不得超过5M，</view>
+          <text>最多上传5张。</text>
+        </view>
+      </view>
+    </view>
+    <view class='btn-box'>
+      <view class='mb-45'>
+      <navigator hover-class='none' url="">
+        <van-button type='primary'>匿名提交</van-button>
+      </navigator>
+      </view>
+      <navigator hover-class='none' url="/pages/onlineComplaint/onlineComplaint">
+        <van-button>
+          <text class='iconfont icon-kefu'></text>在线投诉</van-button>
+      </navigator>
+    </view>
+  </view>
+  <van-action-sheet show="{{ tousuShow }}" actions="{{ tousuTypeList }}" bind:select="selectTypeItem" bind:close="tousuTypeClose" />
+</view>

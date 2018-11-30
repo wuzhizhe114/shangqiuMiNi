@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的投诉-详情",
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index"
+  }
+}

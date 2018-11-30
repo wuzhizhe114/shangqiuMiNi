@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "商品分类",  
+  "navigationBarTitleText": "在线投诉",
   "usingComponents": {
     "p-header": "/component/pHeader/pHeader",
     "van-button": "vant-weapp/button/index"

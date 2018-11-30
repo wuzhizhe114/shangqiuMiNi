@@ -1,5 +1,5 @@
 /* pages/yaoyiyao/yaoyiyao.wxss */
-.main {
+.container {
   background-color: #2e3132;
 }
 .yaoyiyao-icon > .pic {
@@ -12,8 +12,12 @@
   margin-bottom: 178rpx;
   font-size: 40rpx;
 }
-.yaoyiyao1 .shangjia .iconfont {
+/* .yaoyiyao1 .shangjia .iconfont {
   font-size: 130rpx;
+} */
+.yaoyiyao1 .shangjia .market-pic {
+  width: 134rpx;
+  height: 134rpx;
 }
 
 /* 第二步 */
@@ -27,4 +31,40 @@
 .yaoyiyao2 .yaoyiyao-icon > .pic {
   width: 126rpx;
   height: 152rpx;
+}
+
+/* 底部 */
+.container .footer {
+  padding: 30rpx 60rpx 56rpx;
+  background-color: #2e3132;
+}
+
+
+/* 商品类别弹出层 */
+.product-category .category-box {
+  width: 92vw;
+  padding: 20rpx 40rpx;
+}
+.product-category .van-row {
+  padding: 20rpx 0;
+}
+.product-category .van-button {
+  height: 48rpx;
+  line-height: 46rpx;
+  font-size: 24rpx;
+}
+
+.container .van-popup {
+  top: 70%;
+}
+/* .container .van-popup--bottom {
+  bottom: 180rpx;
+} */
+.container .overlay-index--van-overlay {
+  background-color: transparent !important;
+}
+
+/* 重写某工具类 */
+.pd-tb-10 {
+  padding: 6rpx 0 10rpx;
 }

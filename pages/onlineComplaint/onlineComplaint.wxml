@@ -1,0 +1,59 @@
+<!--pages/onlineComplaint/onlineComplaint.wxml-->
+<view class='container'>
+  <view class='main fl-1 mb-0'>
+    <view class='shanghu-info pd-30'>
+      <navigator class='info box-sh-all d-fl' url=''>
+        <image src='{{picHost}}index/shuichan.png' class='info-pic'></image>
+        <view class='fl-1 ml-24'>
+          <view class='d-fl mb-10'>
+            <text class='fl-1 fs-32 fw-b'>何记水产</text>
+            <text class='color-gray fs-24'>A301</text>
+          </view>
+          <view class='mb-10'>
+            <text>信用评级：</text>
+            <view class='dis-in theme-color'>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-stars"></text>
+              <text class="iconfont icon-xingxingxianmiao"></text>
+            </view>
+          </view>
+          <view class='mb-10'>
+            <text class='iconfont icon-mai theme-color mr-10'></text>
+            <text>主营：水产，海鲜</text>
+          </view>
+          <view class='d-fl'>
+            <view class='fl-1'>商品数量：
+              <text class='theme-color'>30</text>
+            </view>
+            <view>
+              <text class='iconfont icon-pinglun theme-color fs-32'></text>2036
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class='message-list'>
+      <view class='kefu'>
+        <text class='dis-il item bg-white box-sh-all'>亲，请问你想投诉这个商家什么问题呀？</text>
+      </view>
+    </view>
+  </view>
+  <view class='footer bg-white'>
+    <view class='biaoqian mb-35'>
+      <van-button type='primary'>价格偏高</van-button>
+      <van-button type='primary' class='ml-24'>卫生太差</van-button>
+      <van-button type='primary' class='ml-24'>态度恶劣</van-button>
+    </view>
+    <view class='message-box d-fl'>
+      <view>
+        <text class='iconfont icon-iconset0186 add theme-color mr-10'></text>
+      </view>
+      <view class='input-box fl-1 pr'>
+        <input class='pl-20' placeholder='请输入问题描述' placeholder-class='color-gray' confirm-type="send"></input>
+        <text class='iconfont icon-tubiaoku- fs-42 theme-color yuyin'></text>
+      </view>
+    </view>
+  </view>
+</view>

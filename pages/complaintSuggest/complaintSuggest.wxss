@@ -1,0 +1,26 @@
+/* pages/complaintSuggest/complaintSuggest.wxss */
+
+.complaint .type .van-button {
+  height: 46rpx;
+  line-height: 46rpx;
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  color: #333;
+  border-color: #ddd;
+}
+.complaint textarea {
+  border-radius: 3px;
+}
+
+.upload .img {
+  width: 190rpx;
+  height: 150rpx;
+  border-radius: 3px;
+}
+.upload .icon-camera {
+  font-size: 88rpx
+}
+.upload .tips {
+  padding: 20rpx 0 0 30rpx;
+}

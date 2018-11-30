@@ -10,7 +10,7 @@
         <view class=''>
           <text class='iconfont icon-taiyang theme-color mr-10 fs-24'></text>小白生活家</view>
       </view>
-      <image src='{{picHost}}geren/erweima.png' class='erweima box-sh-all gray-border' bindtap='showErweimaPopup'></image>
+      <image src='{{picHost}}geren/erweima.png' class='erweima box-sh-all gray-border2' bindtap='showErweimaPopup'></image>
     </view>
     <view class='bg-white pd-lr-30 mb-20 box-sh'>
       <navigator class='user-item d-fl theme-b-b'>
@@ -22,7 +22,7 @@
       <navigator class='user-item d-fl theme-b-b' url='/pages/myComplaint/myComplaint'>
         <text class='iconfont icon-jianyi1 color-blue1 d-fl al-center'></text>
         <text class='ml-20'>我的投诉</text>
-        <text class='fl-1 text-right'></text>
+        <view class='fl-1 fs-20 color-gray d-fl al-center jc-end'><text class='mr-10'>您有5条新消息</text><text class='red-point'></text></view>
         <text class='iconfont icon-xiangxia fs-36 rotate-ne-90'></text>
       </navigator>
     </view>
@@ -80,7 +80,7 @@
     </view>
     <!-- 二维码弹窗 -->
     <van-popup show="{{ showPopup }}" bind:close="erweimaPopupClose">
-      <view class='erweima-box'>
+      <view class='erweima-box gray-border2'>
         <image src='{{picHost}}geren/erweima.png'></image>
       </view>
     </van-popup>

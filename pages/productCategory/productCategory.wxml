@@ -1,4 +1,11 @@
 <!--pages/productCategory/productCategory.wxml-->
+<wxs module="dealWith">
+var absoluteValue = function (temp) {
+  return Math.abs(temp)
+}
+
+module.exports.absoluteValue = absoluteValue;
+</wxs>
 <view class='container product-category'>
   <p-header/>
   <view class='main fl-1 mb-0'>
@@ -28,34 +35,34 @@
       </view>
     </view>
     <view class='product-nav pd-30 d-fl'>
-      <van-button type="primary" class=''>按信用等级</van-button>
-      <van-button type="default" class=' ml-24 theme-color'>按价格高低</van-button>
+      <van-button data-active="0" type="{{categoryActive === '0' ? 'primary' : 'default'}}" catchtap='changeCategoryActive' class=''>按信用等级</van-button>
+      <van-button data-active="1" type="{{categoryActive === '1' ? 'primary' : 'default'}}" catchtap='changeCategoryActive' class='ml-24 theme-color'>按价格高低</van-button>
     </view>
     <view class='product-list bg-white pd-lr-30'>
-      <navigator url='/pages/shanghuInfo/shanghuInfo' class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
-        <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+      <navigator url='/pages/shanghuInfo/shanghuInfo' class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active' wx:for="{{productCategory}}" wx:key="{{pIndex}}" wx:for-index="pIndex" wx:for-item="pItem">
+        <image src='{{picHost}}{{pItem.picUrl}}' class='gray-border'></image>
         <view class='fl-1 ml-24'>
           <view class='d-fl'>
-            <text class='fl-1'>李三熟食</text>
-            <text class='color-blue fs-32'>2.5 元/斤</text>
+            <text class='fl-1'>{{pItem.name}}</text>
+            <text class='fs-32 {{pItem.bodon > 0 ? "color-red" : "color-blue"}}'>{{pItem.jiage}}元/斤</text>
           </view>
           <view class='fs-24 mb-10'>
             <text class='mr-10'>信用评级：</text>
             <text class='theme-color'>
+              <text class='iconfont icon-stars' wx:for="{{pItem.score}}" wx:key="{{index}}"></text>
+              <!-- <text class='iconfont icon-stars'></text>
               <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-stars'></text>
-            <text class='iconfont icon-xingxingxianmiao'></text>
+              <text class='iconfont icon-stars'></text> -->
+              <text class='iconfont icon-xingxingxianmiao' wx:for="{{5 - pItem.score}}" wx:key="{{index}}"></text>
             </text>
           </view>
           <view class='d-fl fs-24'>
-            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text> 华商大道西段169号附近</text>
-            <text> <text class='iconfont icon-iconset0444 theme-color'></text> 0.3元/斤</text>
+            <text class='fl-1'> <text class='iconfont icon-dingweiweizhi theme-color'></text>{{pItem.addr}}</text>
+            <text> <text class='iconfont {{pItem.bodon > 0 ? "icon-iconset0445" : "icon-iconset0444"}} theme-color'></text>{{dealWith.absoluteValue(pItem.bodon)}}元/斤</text>
           </view>
         </view>
       </navigator>
-      <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
+      <!-- <navigator class='item d-fl theme-b-b pd-tb-20 pr' hover-class='block-active'>
         <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
         <view class='fl-1 ml-24'>
           <view class='d-fl'>
@@ -146,7 +153,7 @@
             <text> <text class='iconfont icon-iconset0445 theme-color'></text> 0.3元/斤</text>
           </view>
         </view>
-      </navigator>
+      </navigator> -->
     </view>
     <!-- 底部提示 -->
     <view class='page-end color-gray d-fl al-center'>

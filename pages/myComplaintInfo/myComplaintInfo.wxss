@@ -1,0 +1,14 @@
+/* pages/myComplaintInfo/myComplaintInfo.wxss */
+.tousuCon .tousu-item {
+  border-bottom-color: #eee;
+}
+.tousu-item:last-child {
+  border-bottom: none;
+}
+
+.content {
+  width: 66%;
+  padding: 20rpx;
+  border-radius: 3px;
+  background-color: #f3f3f3;
+}

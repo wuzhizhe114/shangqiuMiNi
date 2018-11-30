@@ -8,7 +8,46 @@ Page({
     picHost: 'https://clueless.gitee.io/shangqiuimages/',
     valueRate: 0,
     otherActive: '0',
-    tousuPopup: false
+    tousuPopup: false,
+    productRecomActive: '0',
+    productListData:[
+      {
+        picUrl: 'shanghu/kugua.png',
+        name:'印度苦瓜',
+        jiage:'2.5',
+        type: '蔬菜',
+        chandi: '商丘瓜果基地',
+        jinhuo: '2018-11-29',
+        baocun: '冷藏'
+      },
+      {
+        picUrl: 'shanghu/xiaobaicai.png',
+        name:'商丘小白菜',
+        jiage:'2.2',
+        type: '蔬菜',
+        chandi: '商丘瓜果基地',
+        jinhuo: '2018-11-29',
+        baocun: '冷藏'
+      },
+      {
+        picUrl: 'shanghu/shucai.png',
+        name:'生菜',
+        jiage:'2.1',
+        type: '蔬菜',
+        chandi: '商丘瓜果基地',
+        jinhuo: '2018-11-29',
+        baocun: '冷藏'
+      },
+      {
+        picUrl: 'shanghu/nangua.png',
+        name:'南瓜',
+        jiage:'2.0',
+        type: '蔬菜',
+        chandi: '商丘瓜果基地',
+        jinhuo: '2018-11-29',
+        baocun: '冷藏'
+      },
+    ]
   },
   // 评分
   rateChange(){
@@ -44,6 +83,12 @@ Page({
     this.tousuPopupClose();
     wx.makePhoneCall({
       phoneNumber: '07532235698'
+    })
+  },
+  // 切换商品推荐方式
+  changeProductActive(e){
+    this.setData({
+      productRecomActive: e.currentTarget.dataset['active']
     })
   },
 

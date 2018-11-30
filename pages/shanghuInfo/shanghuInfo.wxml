@@ -7,7 +7,12 @@
       <view class='fl-1 ml-24'>
         <view class='d-fl'>
           <text class='fl-1'>李三熟食</text>
-          <text class='iconfont icon-star color-red fs-58'></text>
+          <view class='d-fl al-center pd-10'>
+            <text class='iconfont icon-star color-red fs-28'></text>          
+          </view>
+          <view class='pr pd-10' data-other-index="1" hover-class='block-active' bindtap='otherChange'>
+            <text class='iconfont icon-bianji color-blue fs-28'></text>
+          </view>
         </view>
         <view class='d-fl fs-22 mb-20'>
           <text class='fl-1 d-fl al-center'>信用评级：<text class='theme-color'>
@@ -18,8 +23,9 @@
           <text class='iconfont fs-24 icon-xingxingxianmiao'></text>
           </text>
           </text>
-          <view class='pr' data-other-index="1" hover-class='block-active' bindtap='otherChange'>
-            <text class='iconfont icon-bianji color-blue fs-58'></text>
+          <view class='pr text-center color-666'>
+            <text class='iconfont icon-dangan fs-28'></text>
+            <view><text class='fs-20'>信用档案</text></view>
           </view>
         </view>
         <view class='d-fl fs-22 mb-20'>
@@ -67,54 +73,34 @@
       </view>
       <view class='product-recom bg-white pd-lr-30 of-hidden'>
         <view class='nav'>
-          <text class='theme-color'>推荐</text>
-          <text>蔬菜</text>
-          <text>果品</text>
-          <text>菌类</text>
-          <text>禽蛋</text>
+          <text data-active="0" class='{{productRecomActive === "0" ? "theme-color" : ""}}' catchtap='changeProductActive'>推荐</text>
+          <text data-active="1" class='{{productRecomActive === "1" ? "theme-color" : ""}}' catchtap='changeProductActive'>蔬菜</text>
+          <text data-active="2" class='{{productRecomActive === "2" ? "theme-color" : ""}}' catchtap='changeProductActive'>果品</text>
+          <text data-active="3" class='{{productRecomActive === "3" ? "theme-color" : ""}}' catchtap='changeProductActive'>菌类</text>
+          <text data-active="4" class='{{productRecomActive === "4" ? "theme-color" : ""}}' catchtap='changeProductActive'>禽蛋</text>
         </view>
         <view class='product-list'>
-          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
-            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active' wx:for="{{productListData}}" wx:key="{{index}}">
+            <image src='{{picHost}}{{item.picUrl}}' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
-                <text class='fl-1'>印度苦瓜</text>
-                <text class='color-red'>2.5 元/斤</text>
+                <text class='fl-1'>{{item.name}}</text>
+                <text class='color-red'>{{item.jiage}}元/斤</text>
               </view>
               <view class='d-fl mb-10 fs-24'>
-                <text class='fl-1'>分类：蔬菜</text>
-                <text class='color-blue'>产地：商丘瓜果基地</text>
+                <text class='fl-1'>分类：{{item.type}}</text>
+                <text class='color-blue'>产地：{{item.chandi}}</text>
               </view>
               <view class='d-fl fs-22'>
                 <text class='fl-1'>
                   <text class='iconfont icon-shijian theme-color'></text>
-                <text>进货日期：2018/11/26</text>
+                <text>进货日期：{{item.jinhuo}}</text>
                 </text>
-                <text>保存方式：冷鲜</text>
+                <text>保存方式：{{item.baocun}}</text>
               </view>
             </view>
           </navigator>
-          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
-            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
-            <view class='fl-1 ml-24'>
-              <view class='d-fl mb-10'>
-                <text class='fl-1'>生菜</text>
-                <text class='color-red'>2.5 元/斤</text>
-              </view>
-              <view class='d-fl mb-10 fs-24'>
-                <text class='fl-1'>分类：蔬菜</text>
-                <text class='color-blue'>产地：商丘瓜果基地</text>
-              </view>
-              <view class='d-fl fs-22'>
-                <text class='fl-1'>
-                  <text class='iconfont icon-shijian theme-color'></text>
-                <text>进货日期：2018/11/26</text>
-                </text>
-                <text>保存方式：冷鲜</text>
-              </view>
-            </view>
-          </navigator>
-          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+          <!-- <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
             <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
@@ -174,6 +160,26 @@
               </view>
             </view>
           </navigator>
+          <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active'>
+            <image src='{{picHost}}shanghu/shucai.png' class='item-pic gray-border'></image>
+            <view class='fl-1 ml-24'>
+              <view class='d-fl mb-10'>
+                <text class='fl-1'>生菜</text>
+                <text class='color-red'>2.5 元/斤</text>
+              </view>
+              <view class='d-fl mb-10 fs-24'>
+                <text class='fl-1'>分类：蔬菜</text>
+                <text class='color-blue'>产地：商丘瓜果基地</text>
+              </view>
+              <view class='d-fl fs-22'>
+                <text class='fl-1'>
+                  <text class='iconfont icon-shijian theme-color'></text>
+                <text>进货日期：2018/11/26</text>
+                </text>
+                <text>保存方式：冷鲜</text>
+              </view>
+            </view>
+          </navigator> -->
         </view>
       </view>
     </view>
@@ -210,10 +216,10 @@
           <text class='iconfont icon-dianhua mr-10'></text>
           <text>投诉电话</text>
         </view>
-        <view class='color-blue pr' hover-class='block-active'>
+        <navigator class='color-blue pr' hover-class='block-active' url='/pages/complaintSuggest/complaintSuggest'>
           <text class='iconfont icon-jianyi mr-10'></text>
-          <text>投诉建议</text>
-        </view>
+          <text>我要投诉</text>
+        </navigator>
       </view>
     </view>
     <!-- 地图 其他信息 -->

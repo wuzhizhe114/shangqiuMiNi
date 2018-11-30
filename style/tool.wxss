@@ -17,11 +17,17 @@
 .gray-border {
   border: 1px solid #ddd;
 }
+.gray-border2 {
+  border: 2px solid #ddd;
+}
 
 /* 白色背景 */
 
 .bg-white {
   background-color: #fff;
+}
+.bg-f3 {
+  background-color: #f3f3f3;
 }
 
 /* 模糊背景图片 */
@@ -89,6 +95,9 @@
 .fs-58 {
   font-size: 58rpx;
 }
+.fs-42 {
+  font-size: 42rpx;
+}
 
 /* 18号 字体 */
 
@@ -100,6 +109,9 @@
 
 .fs-32 {
   font-size: 32rpx;
+}
+.fs-28 {
+  font-size: 28rpx;
 }
 
 /* 12号 字体 */
@@ -118,6 +130,11 @@
 
 .fs-20 {
   font-size: 20rpx;
+}
+
+/* 字体形态 */
+.fw-b {
+  font-weight: bold;
 }
 
 /* 黑色半透明蒙版 */
@@ -151,6 +168,9 @@
 
 .pd-30 {
   padding: 30rpx;
+}
+.pd-10 {
+  padding: 10rpx;
 }
 
 .pd-lr-30 {
@@ -260,6 +280,9 @@
 .dis-in {
   display: inline;
 }
+.dis-il {
+  display: inline-block;
+}
 
 /* 盒子阴影 */
 
@@ -323,6 +346,9 @@
   justify-content: space-between;
 }
 
+.fl-2 {
+  flex: 2;
+}
 .fl-1 {
   flex: 1;
 }
@@ -343,4 +369,14 @@
   -moz-transform: rotate(-90deg); /* Firefox */
   -webkit-transform: rotate(-90deg); /* Safari 和 Chrome */
   -o-transform: rotate(-90deg);
+}
+
+
+/* 小红点 */
+.red-point {
+  display: inline-block;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #e94d4d;
+  border-radius: 50%;
 }

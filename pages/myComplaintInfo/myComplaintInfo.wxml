@@ -1,0 +1,54 @@
+<!--pages/myComplaintInfo/myComplaintInfo.wxml-->
+<view class='container'>
+  <view class='main fl-1 mb-0'>
+    <view class='tousuCon pd-lr-30 bg-white box-sh mb-20'>
+      <view class='tousu-item theme-b-b pd-tb-26 d-fl'>
+        <view class='fl-1'>
+          <text class='iconfont icon-icon_biaoti theme-color'></text>
+          <text class='ml-24'>投诉商家</text>
+        </view>
+        <text class='fw-b'>何记水产</text>
+      </view>
+      <view class='tousu-item theme-b-b pd-tb-26 d-fl'>
+        <view class='fl-1'>
+          <text class='iconfont icon-shijian theme-color'></text>
+          <text class='ml-24'>投诉时间</text>
+        </view>
+        <text class='color-gray'>2018年11月02日</text>
+      </view>
+      <view class='tousu-item theme-b-b pd-tb-26 d-fl'>
+        <view class='fl-1'>
+          <text class='iconfont icon-icon_leixing theme-color'></text>
+          <text class='ml-24'>投诉类型</text>
+        </view>
+        <text class='theme-color'>价格偏高</text>
+      </view>
+      <view class='tousu-item theme-b-b pd-tb-26 d-fl'>
+        <view class='fl-1'>
+          <text class='iconfont icon-neirongyingxiangli theme-color'></text>
+          <text class='ml-24'>投诉内容</text>
+        </view>
+        <view class='content gray-border'>
+          <text>价格那么高，高于市场均值，黑心商家。价格那么高，高于市场均值，黑心商家。价格那么高，高于市场均值，黑心商家。</text>
+        </view>
+      </view>
+    </view>
+    <view class='huifuCon pd-lr-30 bg-white box-sh pb-100'>
+      <view class='tousu-item theme-b-b pd-tb-26 d-fl'>
+        <view class='fl-1'>
+          <text class='iconfont icon-xiaohuifudianji theme-color'></text>
+          <text class='ml-24'>回复内容</text>
+        </view>
+        <view class='content gray-border'>
+          <text>您好！关于您的投诉已经收到，正在处理中，请您稍安勿躁。您好！关于您的投诉已经收到，正在处理中，请您稍安勿躁!</text>
+        </view>
+      </view>
+    </view>
+    <view class='btn-box pd-30'>
+      <navigator hover-class='none' url='/pages/onlineComplaint/onlineComplaint'>
+        <van-button type='primary'>
+          <text class='iconfont icon-kefu'></text>在线投诉</van-button>
+      </navigator>
+    </view>
+  </view>
+</view>

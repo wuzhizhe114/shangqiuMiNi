@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我要投诉",
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index",
+    "van-action-sheet": "vant-weapp/action-sheet/index"
+  }
+}

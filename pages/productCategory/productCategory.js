@@ -6,6 +6,63 @@ Page({
    */
   data: {
     picHost: 'http://clueless.gitee.io/shangqiuimages/',
+    categoryActive:'0',
+    productCategory: [
+      {
+        picUrl:'shanghu/shushi.png',
+        name:'李三熟食',
+        jiage: '12.5',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: -0.5
+      },
+      {
+        picUrl:'shanghu/huacai.png',
+        name:'阿里菜店',
+        jiage: '12.8',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: 0.3
+      },
+      {
+        picUrl:'shanghu/shushi.png',
+        name:'李三熟食',
+        jiage: '12.5',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: -0.5
+      },
+      {
+        picUrl:'shanghu/huacai.png',
+        name:'阿里菜店',
+        jiage: '12.8',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: 0.3
+      },
+      {
+        picUrl:'shanghu/shushi.png',
+        name:'李三熟食',
+        jiage: '12.5',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: -0.5
+      },
+      {
+        picUrl:'shanghu/huacai.png',
+        name:'阿里菜店',
+        jiage: '12.8',
+        score: 5,
+        addr: '华商大道西段169号附近',
+        bodon: 0.3
+      },
+    ]
+  },
+  changeCategoryActive(e){
+    // console.log(e)
+    this.setData({
+      categoryActive: e.currentTarget.dataset['active']
+    })
   },
 
   /**
