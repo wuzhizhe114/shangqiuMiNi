@@ -6,17 +6,26 @@
     <view class='shanghu-ranking pd-30 bg-white box-sh'>
       <view class='of-x-scroll pr'>
         <view class='scroll-box'>
-          <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
+          <view class='shanghu-item ml-24 pr'>
             <image src='{{picHost}}index/first_pic.png'></image>
-          </navigator>
-          <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
+          </view>
+          <view class='shanghu-item ml-24 pr'>
             <image src='{{picHost}}index/second_pic.png'></image>
-            <view class='item-tip d-fl al-center'>
-              <text>信用排行 ></text>
-            </view>
-          </navigator>
-          <navigator class='shanghu-item ml-24 pr' url="shanghuRanking">
+          </view>
+          <view class='shanghu-item ml-24 pr'>
             <image src='{{picHost}}index/third_pic.png'></image>
+          </view>
+          <view class='shanghu-item ml-24 pr'>
+            <image src='{{picHost}}index/qiandama.png'></image>
+          </view>
+          <view class='shanghu-item ml-24 pr'>
+            <image src='{{picHost}}index/fushi.png'></image>
+          </view>
+          <navigator class='shanghu-item ml-24 pr' url='shanghuRanking'>
+            <image src='{{picHost}}shanghu/paihang.png'></image>
+            <view class='item-tip d-fl al-center'>
+              <text>更多排行 ></text>
+            </view>
           </navigator>
         </view>
       </view>

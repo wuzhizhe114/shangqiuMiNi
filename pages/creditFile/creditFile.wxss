@@ -1,0 +1,38 @@
+/* pages/creditFile/creditFile.wxss */
+.credit-file .basic-info {
+  line-height: 60rpx;
+}
+.credit-file .basic-info .left {
+  background-color: #f1f1f1
+}
+.credit-file .basic-info .item {
+  border-bottom-color: #ddd;
+}
+.credit-file .basic-info .right {
+  background-color: #fdf4e8;
+  border-left: none;
+}
+
+.credit-file .market-score {
+  background: url('https://clueless.gitee.io/shangqiuimages/shanghu/dangan/leida-bg.png') no-repeat #fff;
+  background-size: 100% 100%;
+}
+.credit-file .market-score .leida {
+  width: 470rpx;
+  height: 230rpx;
+}
+
+.credit-file .my-credit .zexian {
+  width: 520rpx;
+  height: 210rpx;
+}
+
+.credit-file .zige .image-box {
+  align-items: flex-end;
+}
+.credit-file .zige .image-box image {
+  height: 140rpx;
+}
+.credit-file .zige .zige1 image {
+  height: 154rpx;
+}

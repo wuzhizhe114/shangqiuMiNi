@@ -10,7 +10,7 @@
         <view class=''>
           <text class='iconfont icon-taiyang theme-color mr-10 fs-24'></text>小白生活家</view>
       </view>
-      <image src='{{picHost}}geren/erweima.png' class='erweima box-sh-all gray-border2' bindtap='showErweimaPopup'></image>
+      <!-- <image src='{{picHost}}geren/erweima.png' class='erweima box-sh-all gray-border2' bindtap='showErweimaPopup'></image> -->
     </view>
     <view class='bg-white pd-lr-30 mb-20 box-sh'>
       <navigator class='user-item d-fl theme-b-b'>

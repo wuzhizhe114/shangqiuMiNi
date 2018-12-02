@@ -7,14 +7,14 @@
     <view class='bg-white box-sh mb-20 pd-lr-30'>
       <view class='product-item pd-tb-20 d-fl theme-b-b'>
         <van-checkbox class='al-s-center' value='{{productItem}}' checked-color="#f29e2e" bind:change="productItemChange"></van-checkbox>
-        <image src='{{picHost}}shanghu/kafei.png' class='item-pic ml-24 box-sh-all'></image>
+        <image src='{{picHost}}shanghu/shucai.png' class='item-pic ml-24 box-sh-all'></image>
         <view class='fl-1 ml-24'>
           <view class='d-fl mb-10'>
-            <text class='fl-1 text-ell'>黄金曼特宁挂耳咖啡 10克*10包</text>
-            <text class='ml-24'>X1</text>
+            <text class='fl-1 text-ell'>生菜 1捆</text>
+            <text class='ml-24'>X2</text>
           </view>
           <view class='d-fl mb-10'>
-            <text class='fl-1 color-gray fs-20'>100克</text>
+            <text class='fl-1 color-gray fs-20'>1000克</text>
             <text><text class='iconfont icon-iconset0444 color-blue mr-10'></text>
             <text class='color-red fs-24'>2.5 元/斤</text></text>
           </view>
@@ -25,16 +25,16 @@
       </view>
       <view class='product-item pd-tb-20 d-fl theme-b-b'>
         <van-checkbox class='al-s-center' value='{{productItem}}' checked-color="#f29e2e" bind:change="productItemChange"></van-checkbox>
-        <image src='{{picHost}}shanghu/kafei.png' class='item-pic ml-24 box-sh-all'></image>
+        <image src='{{picHost}}shanghu/fanqie.png' class='item-pic ml-24 box-sh-all'></image>
         <view class='fl-1 ml-24'>
           <view class='d-fl mb-10'>
-            <text class='fl-1 text-ell'>黄金曼特宁挂耳咖啡 10克*10包</text>
+            <text class='fl-1 text-ell'>番茄 1袋</text>
             <text class='ml-24'>X1</text>
           </view>
           <view class='d-fl mb-10'>
-            <text class='fl-1 color-gray fs-20'>100克</text>
+            <text class='fl-1 color-gray fs-20'>1000克</text>
             <text><text class='iconfont icon-iconset0444 color-blue mr-10'></text>
-            <text class='color-red fs-24'>2.5 元/斤</text></text>
+            <text class='color-red fs-24'>2.0 元/斤</text></text>
           </view>
           <view class='d-fl jc-end'>
             <text class='color-blue fs-24'>店铺：李三熟食</text>
@@ -43,16 +43,16 @@
       </view>
       <view class='product-item pd-tb-20 d-fl theme-b-b'>
         <van-checkbox class='al-s-center' value='{{productItem}}' checked-color="#f29e2e" bind:change="productItemChange"></van-checkbox>
-        <image src='{{picHost}}shanghu/kafei.png' class='item-pic ml-24 box-sh-all'></image>
+        <image src='{{picHost}}shanghu/shushi.png' class='item-pic ml-24 box-sh-all'></image>
         <view class='fl-1 ml-24'>
           <view class='d-fl mb-10'>
-            <text class='fl-1 text-ell'>黄金曼特宁挂耳咖啡 10克*10包</text>
+            <text class='fl-1 text-ell'>烤鸭 1例</text>
             <text class='ml-24'>X1</text>
           </view>
           <view class='d-fl mb-10'>
-            <text class='fl-1 color-gray fs-20'>100克</text>
+            <text class='fl-1 color-gray fs-20'>1000克</text>
             <text><text class='iconfont icon-iconset0444 color-blue mr-10'></text>
-            <text class='color-red fs-24'>2.5 元/斤</text></text>
+            <text class='color-red fs-24'>15 元/斤</text></text>
           </view>
           <view class='d-fl jc-end'>
             <text class='color-blue fs-24'>店铺：李三熟食</text>
@@ -67,8 +67,8 @@
           <navigator hover-class='none'>
             <view class='item-pic pr'>
               <image src='{{picHost}}shanghu/yumi.png'></image>
-              <view class='block-mask color-white pd-lr-20 text-ell box-sh-all'>
-                <text>粒大饱满，美味健康！粒大饱满，美味健康！</text>
+              <view class='block-mask color-white pd-lr-20 text-ell'>
+                <text>粒大饱满，美味健康！</text>
               </view>
             </view>
             <view class='item-info'>
@@ -76,10 +76,10 @@
                 <view class='fl-1 text-ell'>
                   <text>玉米</text>
                 </view>
-                <text class='fs-22 color-gray'>148 克</text>
+                <text class='fs-22 color-gray'>500 克</text>
               </view>
               <view class='pb-30'>
-                <text class='color-red'>¥ 28</text>
+                <text class='color-red'>¥ 2</text>
               </view>
             </view>
           </navigator>
@@ -87,20 +87,41 @@
         <view class='recom-item'>
           <navigator hover-class='none'>
             <view class='item-pic pr'>
-              <image src='{{picHost}}shanghu/yumi.png'></image>
-              <view class='block-mask color-white pd-lr-20 text-ell box-sh-all'>
-                <text>粒大饱满，美味健康！粒大饱满，美味健康！</text>
+              <image src='{{picHost}}shanghu/huacai.png'></image>
+              <view class='block-mask color-white pd-lr-20 text-ell'>
+                <text>粒大饱满，美味健康！</text>
               </view>
             </view>
             <view class='item-info'>
               <view class='d-fl lh-72'>
                 <view class='fl-1 text-ell'>
-                  <text>玉米</text>
+                  <text>花菜</text>
                 </view>
-                <text class='fs-22 color-gray'>148 克</text>
+                <text class='fs-22 color-gray'>500 克</text>
               </view>
               <view class='pb-30'>
-                <text class='color-red'>¥ 28</text>
+                <text class='color-red'>¥ 4</text>
+              </view>
+            </view>
+          </navigator>
+        </view>
+        <view class='recom-item'>
+          <navigator hover-class='none'>
+            <view class='item-pic pr gray-border'>
+              <image src='{{picHost}}shanghu/nangua.png'></image>
+              <view class='block-mask color-white pd-lr-20 text-ell'>
+                <text>粒大饱满，美味健康！</text>
+              </view>
+            </view>
+            <view class='item-info'>
+              <view class='d-fl lh-72'>
+                <view class='fl-1 text-ell'>
+                  <text>南瓜</text>
+                </view>
+                <text class='fs-22 color-gray'>500 克</text>
+              </view>
+              <view class='pb-30'>
+                <text class='color-red'>¥ 5</text>
               </view>
             </view>
           </navigator>
@@ -108,41 +129,20 @@
         <view class='recom-item'>
           <navigator hover-class='none'>
             <view class='item-pic pr'>
-              <image src='{{picHost}}shanghu/yumi.png'></image>
-              <view class='block-mask color-white pd-lr-20 text-ell box-sh-all'>
-                <text>粒大饱满，美味健康！粒大饱满，美味健康！</text>
+              <image src='{{picHost}}shanghu/tudou.png'></image>
+              <view class='block-mask color-white pd-lr-20 text-ell'>
+                <text>粒大饱满，美味健康！</text>
               </view>
             </view>
             <view class='item-info'>
               <view class='d-fl lh-72'>
                 <view class='fl-1 text-ell'>
-                  <text>玉米</text>
+                  <text>土豆</text>
                 </view>
-                <text class='fs-22 color-gray'>148 克</text>
+                <text class='fs-22 color-gray'>500 克</text>
               </view>
               <view class='pb-30'>
-                <text class='color-red'>¥ 28</text>
-              </view>
-            </view>
-          </navigator>
-        </view>
-        <view class='recom-item'>
-          <navigator hover-class='none'>
-            <view class='item-pic pr'>
-              <image src='{{picHost}}shanghu/yumi.png'></image>
-              <view class='block-mask color-white pd-lr-20 text-ell box-sh-all'>
-                <text>粒大饱满，美味健康！粒大饱满，美味健康！</text>
-              </view>
-            </view>
-            <view class='item-info'>
-              <view class='d-fl lh-72'>
-                <view class='fl-1 text-ell'>
-                  <text>玉米</text>
-                </view>
-                <text class='fs-22 color-gray'>148 克</text>
-              </view>
-              <view class='pb-30'>
-                <text class='color-red'>¥ 28</text>
+                <text class='color-red'>¥ 2.5</text>
               </view>
             </view>
           </navigator>
@@ -154,11 +154,11 @@
     <view class='d-fl theme-b-b'>
       <view class='fl-1 d-fl'>
         <van-checkbox class='d-fl al-center' value='{{productItem}}' checked-color="#f29e2e" bind:change="productItemChange"></van-checkbox>
-        <text class='color-gray ml-24 d-fl al-center'>已选(0)</text>
+        <text class='color-gray ml-24 d-fl al-center'>已选(3)</text>
       </view>
       <view class='d-fl'>
-        <text class='color-red fs-32 d-fl al-center'>¥ 128.00</text>
-        <van-button type='primary' class='ml-24'>合计</van-button>
+        <text class='color-red fs-32 d-fl al-center'>¥ 19.5</text>
+        <van-button type='primary' class='ml-24'>预算</van-button>
       </view>
     </view>
   </view>

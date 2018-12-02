@@ -39,13 +39,19 @@
       </van-tab>
       <van-tab title="商户名称">
         <view class='complaint-list pd-lr-30 pb-100'>
-          <navigator class='list-item d-fl pd-tb-20 theme-b-b' wx:for="{{pageData}}" wx:key="{{index}}">
+          <navigator class='list-item d-fl pd-tb-20 theme-b-b' url='/pages/myComplaintInfo/myComplaintInfo' wx:for="{{pageData}}" wx:key="{{index}}" hover-class='none'>
             <image src='{{item.picUrl}}' class='item-pic br-half'></image>
             <view class='fl-1 ml-24'>
-              <view class='d-fl mb-10'>
+              <view class='d-fl'>
                 <view class='title fl-1'>
                   <text>{{item.title}}</text>
                 </view>
+                <view class='color-blue fs-24 text-right' catchtap='goOnlineComplaint'>
+                  <text class='iconfont icon-kefu fs-24'></text>
+                  <text>在线投诉</text>
+                </view>
+              </view>
+              <view class='text-right'>
                 <text class='color-gray fs-22'>{{item.time}}</text>
               </view>
               <view class='d-fl'>
@@ -68,13 +74,19 @@
       </van-tab>
       <van-tab title="投诉类型">
         <view class='complaint-list pd-lr-30 pb-100'>
-          <navigator class='list-item d-fl pd-tb-20 theme-b-b' wx:for="{{pageData}}" wx:key="{{index}}">
+          <navigator class='list-item d-fl pd-tb-20 theme-b-b' url='/pages/myComplaintInfo/myComplaintInfo' wx:for="{{pageData}}" wx:key="{{index}}" hover-class='none'>
             <image src='{{item.picUrl}}' class='item-pic br-half'></image>
             <view class='fl-1 ml-24'>
-              <view class='d-fl mb-10'>
+              <view class='d-fl'>
                 <view class='title fl-1'>
                   <text>{{item.title}}</text>
                 </view>
+                <view class='color-blue fs-24 text-right' catchtap='goOnlineComplaint'>
+                  <text class='iconfont icon-kefu fs-24'></text>
+                  <text>在线投诉</text>
+                </view>
+              </view>
+              <view class='text-right'>
                 <text class='color-gray fs-22'>{{item.time}}</text>
               </view>
               <view class='d-fl'>

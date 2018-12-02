@@ -1,0 +1,66 @@
+<!--pages/creditFile/creditFile.wxml-->
+<view class='container'>
+  <view class='main fl-1 mb-0 credit-file'>
+    <view class='basic-info d-fl pd-30 bg-white box-sh mb-20'>
+      <view class='left text-right gray-border'>
+        <view class='item theme-b-b'>企业名称：</view>
+        <view class='pl-20 item theme-b-b'>统一社会信用代码：</view>
+        <view class='item theme-b-b'>经营者：</view>
+        <view class='item theme-b-b'>注册地址：</view>
+        <view class='item theme-b-b'>注册日期：</view>
+        <view class='item theme-b-b'>信用等级：</view>
+        <view class='item theme-b-b'>当前排名：</view>
+        <view class='item theme-b-b'>经营范围：</view>
+        <view>商户位置：</view>
+      </view>
+      <view class='right fl-1 gray-border'>
+        <view class='pl-20 item theme-b-b'>李记熟食</view>
+        <view class='pl-20 item theme-b-b'>914403000870397751</view>
+        <view class='pl-20 item theme-b-b'>李元霸</view>
+        <view class='pl-20 item theme-b-b'>商丘市睢阳区</view>
+        <view class='pl-20 item theme-b-b'>2016年3月21日</view>
+        <view class='pl-20 item theme-b-b theme-color'>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+          <text class='iconfont icon-stars'></text>
+        </view>
+        <view class='pl-20 item theme-b-b'>第 1 名</view>
+        <view class='pl-20 item theme-b-b'>蔬菜、果品、副食</view>
+        <view class='pl-20'>3楼301号</view>
+      </view>
+    </view>
+    <view class='market-score pd-lr-30 box-sh pb-60 mb-20 text-right'>
+      <view class='lh-72 theme-color text-center'>市场经营信用评分</view>
+      <image src='{{picHost}}shanghu/dangan/leidatu.png' class='leida mr-66'></image>
+    </view>
+    <view class='my-credit bg-white box-sh text-center of-hidden mb-20'>
+      <view class='lh-72 theme-color'>我的信用评分走势图</view>
+      <image src='{{picHost}}shanghu/dangan/zexiantu.png' class='zexian'></image>
+    </view>
+    <view class='zige box-sh text-center pd-lr-30 bg-white pb-60'>
+      <view class='lh-72 theme-color'>营业资格证</view>
+      <view class='image-box d-fl fs-24'>
+        <view class='zige1 fl-1 mr-10'>
+          <image src='{{picHost}}/shanghu/dangan/zige1.png'></image>
+          <view>营业执照</view>
+        </view>
+        <view class='fl-1 mr-10'>
+          <image src='{{picHost}}/shanghu/dangan/ziige2.png'></image>
+          <view>食品流通许可证</view>
+        </view>
+        <view class='fl-1'>
+          <image src='{{picHost}}/shanghu/dangan/zige3.png'></image>
+          <view>食品安全许可证</view>
+        </view>
+      </view>
+    </view>
+    <!-- 底部提示 -->
+    <view class='page-end pd-30 color-gray d-fl al-center'>
+      <text class='line fl-1'></text>
+      <text class='mlr-10'>我是有底线的</text>
+      <text class='line fl-1'></text>
+    </view>
+  </view>
+</view>

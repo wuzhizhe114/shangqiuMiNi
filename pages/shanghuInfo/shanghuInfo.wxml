@@ -8,7 +8,7 @@
         <view class='d-fl'>
           <text class='fl-1'>李三熟食</text>
           <view class='d-fl al-center pd-10'>
-            <text class='iconfont icon-star color-red fs-28'></text>          
+            <text class='iconfont icon-star color-red fs-28'></text>
           </view>
           <view class='pr pd-10' data-other-index="1" hover-class='block-active' bindtap='otherChange'>
             <text class='iconfont icon-bianji color-blue fs-28'></text>
@@ -23,10 +23,12 @@
           <text class='iconfont fs-24 icon-xingxingxianmiao'></text>
           </text>
           </text>
-          <view class='pr text-center color-666'>
+          <navigator class='pr text-center color-666' url="/pages/creditFile/creditFile">
             <text class='iconfont icon-dangan fs-28'></text>
-            <view><text class='fs-20'>信用档案</text></view>
-          </view>
+            <view>
+              <text class='fs-20'>信用档案</text>
+            </view>
+          </navigator>
         </view>
         <view class='d-fl fs-22 mb-20'>
           <view class='fl-1 d-fl al-center'>

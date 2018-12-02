@@ -214,6 +214,9 @@
 
 /* 外边距 */
 
+.mr-66 {
+  margin-right: 66rpx;
+}
 .mr-32 {
   margin-right: 32rpx;
 }
