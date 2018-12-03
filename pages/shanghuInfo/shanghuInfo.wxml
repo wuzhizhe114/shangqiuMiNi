@@ -3,10 +3,10 @@
   <p-header />
   <view class='main fl-1 mb-0'>
     <view class='basic-info pd-30 bg-white box-sh mb-20 d-fl'>
-      <image src='{{picHost}}shanghu/shushi.png' class='gray-border'></image>
+      <image src='{{picHost}}index/first_pic2.png' class='gray-border'></image>
       <view class='fl-1 ml-24'>
         <view class='d-fl'>
-          <text class='fl-1'>李三熟食</text>
+          <text class='fl-1'>亚亮熟食</text>
           <view class='d-fl al-center pd-10'>
             <text class='iconfont icon-star color-red fs-28'></text>
           </view>
@@ -69,7 +69,7 @@
       <view class='intro bg-white box-sh pd-lr-30 of-hidden mb-20'>
         <view class='lh-72 theme-color text-center'>简介</view>
         <view class='content mb-45 gray-border mohu-bg-img'>
-          <view class='mb-20'>本公司从2018年02月05日开始在商丘市雪苑农贸市场经营蔬菜销售生意本公司从2018年02月05日开始在商丘市雪苑农贸市=开始在商丘市雪苑农贸市场经营蔬菜销售生意</view>
+          <view class='mb-20'>本商户自2018年02月05日起入驻商丘市雪苑农贸市场，摊位位于市场二层东北侧楼梯口旁。我们专注于家庭生鲜农产品类供应，致力于为居民提供健康、安全的农产品。</view>
           <view>经营范围：蔬菜，果品、菌类、禽蛋</view>
         </view>
       </view>

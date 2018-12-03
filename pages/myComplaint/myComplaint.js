@@ -10,24 +10,24 @@ Page({
         pageUrl:'',
         picUrl:'https://clueless.gitee.io/shangqiuimages/shanghu/shushi.png',
         title: '李三熟食',
-        time: '2018年11月26日',
-        type:'价格偏离',
+        time: '2018年11月29日',
+        type:'价格偏高',
         score: 3
       },
       {
         pageUrl: '',
-        picUrl:'https://clueless.gitee.io/shangqiuimages/shanghu/shushi.png',
+        picUrl:'https://clueless.gitee.io/shangqiuimages/index/first_pic2.png',
         title: '余记烤鸭',
-        time: '2018年11月26日',
-        type: '价格偏离',
+        time: '2018年11月28日',
+        type: '卫生太差',
         score: 4
       },
       {
         pageUrl: '',
         picUrl:'https://clueless.gitee.io/shangqiuimages/index/shuichan.png',
         title: '莲花山水产',
-        time: '2018年11月26日',
-        type: '环境不佳',
+        time: '2018年11月28日',
+        type: '态度恶劣',
         score: 3
       },
       {
@@ -35,15 +35,15 @@ Page({
         picUrl:'https://clueless.gitee.io/shangqiuimages/index/fushi.png',
         title: '钱大妈豆瓣酱',
         time: '2018年11月26日',
-        type: '价格偏离',
+        type: '电子秤不准',
         score: 3
       },
       {
         pageUrl: '',
         picUrl:'https://clueless.gitee.io/shangqiuimages/index/qiandama.png',
         title: '爱辉烘焙坊',
-        time: '2018年11月26日',
-        type: '价格偏离',
+        time: '2018年11月25日',
+        type: '价格偏高',
         score: 3
       }
     ],

@@ -124,7 +124,23 @@
   background-color: #fff;
 }
 
+.swiper .slide-image0 {
+  background: url('http://clueless.gitee.io/shangqiuimages/index/carousel1.png') no-repeat center;
+  background-size: 100%;
+}
+.swiper .slide-image1 {
+  background: url('http://clueless.gitee.io/shangqiuimages/index/slide1.png') no-repeat center;
+  background-size: 100%;
+}
+.swiper .slide-image2 {
+  background: url('http://clueless.gitee.io/shangqiuimages/index/slide2.jpg') no-repeat center;
+  background-size: 100%;  
+}
+
 /* 信用排行 */
+.credit-ranking {
+  padding: 0 30rpx 30rpx 60rpx;
+}
 .credit-ranking .ranking-first {
   height: 334rpx;
 }

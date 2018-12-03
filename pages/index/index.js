@@ -7,22 +7,23 @@ Page({
     // footerActive: '0',
     swiperData:[
       {
-        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        // url:'/images/slide1.png',
+        // url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
         id: '111'
       },
       {
-        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        // url:'http://clueless.gitee.io/shangqiuimages/index/slide2.jpg',
         id: '222'
       },
       {
-        url:'http://clueless.gitee.io/shangqiuimages/index/carousel1.png',
+        // url:'http://clueless.gitee.io/shangqiuimages/index/slide3.jpg',
         id: '333'
       }
     ],
     swiperTips:[
-      '市场部门开展食品安全整治111',
-      '市场部门开展食品安全整治222',
-      '市场部门开展食品安全整治333'
+      '关于加快推进食品经营许可改革工作的通知',
+      '2018年食品安全抽样检验情况通报',
+      '市场监管总局、证监会联合开展“双随机、一公开”抽查监管工作'
     ],
     swiperIndex: 0,
     productData:[

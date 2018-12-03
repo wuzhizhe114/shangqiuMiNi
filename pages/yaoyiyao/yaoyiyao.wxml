@@ -61,7 +61,7 @@
     <view class='item fl-1 d-fl fl-col al-center {{footerActive === "0" ? "theme-color" : ""}}' bindtap='changeFooterAcitve' data-active='0'>
       <text class='iconfont icon-pingjishenpi fs-58'></text>
       <view>
-        <text>信用评级</text>
+        <text>热门商户</text>
       </view>
     </view>
     <view class='item fl-1 d-fl fl-col al-center {{footerActive === "1" ? "theme-color" : ""}}' bindtap='changeFooterAcitve' data-active='1'>
@@ -73,7 +73,7 @@
     <view class='item fl-1 d-fl fl-col al-center {{footerActive === "2" ? "theme-color" : ""}}' bindtap='changeFooterAcitve' data-active='2'>
       <text class='iconfont icon-leibie fs-42 pd-tb-10'></text>
       <view>
-        <text>信用评级</text>
+        <text>商品类别</text>
       </view>
     </view>
   </view>

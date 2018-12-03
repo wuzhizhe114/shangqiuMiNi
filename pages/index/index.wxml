@@ -15,14 +15,25 @@
   <p-header></p-header>
   <view class='main fl-1'>
     <!-- 市场定位 -->
-    <view class="position-market bg-white mb-20 box-sh">
-      <view class='mb-26'>
-        <text class='iconfont icon-dingweiweizhi theme-color'></text>
-        <text class='mlr-10'>当前：</text>
+    <view class="position-market bg-white mb-20 box-sh d-fl">
+      <view class='fl-1'>
+        <text class='iconfont icon-dingweiweizhi theme-color fs-28'></text>
+        <text class='mlr-10 '></text>
         <!-- <navigator></navigator> -->
-        <navigator class='dis-in theme-color theme-b-b pr' hover-class='block-active' url='/pages/positionMarket/positionMarket'>雪苑农资批发市场</navigator>
+        <navigator class='dis-in theme-color theme-b-b pr ' hover-class='block-active' url='/pages/positionMarket/positionMarket'>雪苑农资批发市场</navigator>
+
       </view>
-      <view class='card-rating mb-26 pr'>
+      <view class=''>
+        <text class='ml-24'>市场信用评级：</text>
+        <view class='dis-in theme-color'>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-xingxingxianmiao"></text>
+        </view>
+      </view>
+      <!-- <view class='card-rating mb-26 pr'>
         <image src='http://clueless.gitee.io/shangqiuimages/index/market.png'></image>
         <view class='block-mask pd-lr-20'>
           <text class='color-white'>市场信用评级：</text>
@@ -35,16 +46,16 @@
           </view>
         </view>
       </view>
-      <view>地址：河南省商丘市梁园区货场商丘市长征医院东北</view>
+      <view>地址：河南省商丘市梁园区货场商丘市长征医院东北</view> -->
     </view>
     <!-- 信用公告 -->
     <view class='credit-announce bg-white mb-20 box-sh pd-lr-30 of-hidden'>
-      <view class='lh-72 text-center theme-color'>信用公告</view>
+      <view class='lh-72 text-center theme-color'>通知公告</view>
       <view class='swiper mb-45 pr'>
         <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}" bindchange="swiperChange">
           <block wx:for="{{swiperData}}" wx:key="{{item.id}}">
             <swiper-item>
-              <image src="{{item.url}}" class="slide-image" />
+              <image src="{{item.url}}" class="slide-image{{index}}" />
             </swiper-item>
           </block>
         </swiper>
@@ -58,37 +69,14 @@
     </view>
     <!-- 信用排行 -->
     <view class='credit-ranking bg-white mb-20 box-sh pd-lr-30 of-hidden'>
-      <view class='lh-72 text-center theme-color'>信用排行</view>
+      <view class='lh-72 text-center theme-color'>信用排行榜</view>
       <view class='ranking-box'>
         <view class='first'>
-          <view class='ranking-first mb-26 pr'>
-            <image src='https://clueless.gitee.io/shangqiuimages/index/first_pic.png'></image>
-            <image src='https://clueless.gitee.io/shangqiuimages/index/first.png' class='guanjun'></image>
-            <view class='block-mask pd-lr-20'>
-              <text class='color-white'>信用评级：</text>
-              <view class='dis-in theme-color'>
-                <text class="iconfont icon-stars"></text>
-                <text class="iconfont icon-stars"></text>
-                <text class="iconfont icon-stars"></text>
-                <text class="iconfont icon-stars"></text>
-                <text class="iconfont icon-xingxingxianmiao"></text>
-              </view>
-            </view>
-          </view>
-          <view class='d-fl mb-26'>
-            <view class='fl-1'>商品数量：
-              <text class='theme-color'>30</text>
-            </view>
-            <view class='fl-1'>
-              <text class='iconfont icon-pinglun theme-color'></text> 3452</view>
-          </view>
-        </view>
-        <view class='second-third d-fl fs-24'>
-          <view class='fl-1 d-fl fl-col'>
-            <view class='ranking-second mb-26 pr fl-1'>
-              <image src='https://clueless.gitee.io/shangqiuimages/index/second_pic.png'></image>
-              <image src='https://clueless.gitee.io/shangqiuimages/index/second.png' class='yajun'></image>
-              <view class='block-mask pl-20'>
+          <navigator url='/pages/shanghuInfo/shanghuInfo'>
+            <view class='ranking-first mb-26 pr'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/first_pic2.png'></image>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/first.png' class='guanjun'></image>
+              <view class='block-mask pd-lr-20'>
                 <text class='color-white'>信用评级：</text>
                 <view class='dis-in theme-color'>
                   <text class="iconfont icon-stars"></text>
@@ -100,10 +88,37 @@
               </view>
             </view>
             <view class='d-fl mb-26'>
-              <view class='fl-1'>商丘农家</view>
-              <view class='fl-1 text-right'>
+              <view class='fl-1'>
+                <text>亚亮熟食</text>
+              </view>
+              <view class='fl-1'>
                 商品数量：
-                <text class='theme-color'>30</text>
+                <text class='theme-color'>32</text>
+              </view>
+            </view>
+          </navigator>
+        </view>
+        <view class='second-third d-fl fs-24'>
+          <view class='fl-1 d-fl fl-col'>
+            <view class='ranking-second mb-26 pr fl-1'>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/second_pic.png'></image>
+              <image src='https://clueless.gitee.io/shangqiuimages/index/second.png' class='yajun'></image>
+              <view class='block-mask pl-20'>
+                <text class='color-white fs-22'>信用评级：</text>
+                <view class='dis-in theme-color'>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-xingxingxianmiao"></text>
+                </view>
+              </view>
+            </view>
+            <view class='d-fl mb-26'>
+              <view class='fl-1'>明明水果店</view>
+              <view>
+                商品数量：
+                <text class='theme-color'>27</text>
               </view>
             </view>
           </view>
@@ -113,34 +128,34 @@
               <image src='https://clueless.gitee.io/shangqiuimages/index/third_pic.png'></image>
               <image src='https://clueless.gitee.io/shangqiuimages/index/third.png' class='jijun'></image>
               <view class='block-mask pl-20'>
-                <text class='color-white'>信用评级：</text>
+                <text class='color-white fs-22'>信用评级：</text>
                 <view class='dis-in theme-color'>
-                  <text class="iconfont icon-stars"></text>
-                  <text class="iconfont icon-stars"></text>
-                  <text class="iconfont icon-stars"></text>
-                  <text class="iconfont icon-stars"></text>
-                  <text class="iconfont icon-xingxingxianmiao"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-stars"></text>
+                  <text class="iconfont fs-22 icon-xingxingxianmiao"></text>
                 </view>
               </view>
             </view>
             <view class='d-fl mb-26'>
-              <view class='fl-1'>商丘农家</view>
-              <view class='fl-1 text-right'>
+              <view class='fl-1'>旺角副食店</view>
+              <view>
                 商品数量：
-                <text class='theme-color'>30</text>
+                <text class='theme-color'>22</text>
               </view>
             </view>
           </view>
         </view>
         <view class='other mb-26'>
           <view class='other-item d-fl pd-tb-20 theme-b-b pr' hover-class='block-active'>
-            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/qiandama.png'></image>
+            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/baihuo.jpg'></image>
             <view class='fl-1 d-fl fl-col'>
               <view class='fl-1 d-fl'>
-                <view class='title fl-1'>钱大妈</view>
+                <view class='title fl-1'>超奎百货商行</view>
                 <view class='fs-24'>
                   商品数量：
-                  <text class='theme-color'>30</text>
+                  <text class='theme-color'>17</text>
                 </view>
               </view>
               <view>
@@ -156,13 +171,13 @@
             </view>
           </view>
           <view class='other-item d-fl pd-tb-20 theme-b-b pr' hover-class='block-active'>
-            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/qiandama.png'></image>
+            <image class='other-pic mr-32' src='http://clueless.gitee.io/shangqiuimages/index/first_pic.png'></image>
             <view class='fl-1 d-fl fl-col'>
               <view class='fl-1 d-fl'>
-                <view class='title fl-1'>钱大妈</view>
+                <view class='title fl-1'>苏金旗牛肉铺</view>
                 <view class='fs-24'>
                   商品数量：
-                  <text class='theme-color'>30</text>
+                  <text class='theme-color'>14</text>
                 </view>
               </view>
               <view>
@@ -186,7 +201,7 @@
     </view>
     <!-- 信用商品 -->
     <view class='credit-product bg-white mb-35 box-sh pd-lr-30 of-hidden pb-30'>
-      <view class='lh-72 text-center theme-color'>信用商品</view>
+      <view class='lh-72 text-center theme-color'>商品分类</view>
       <van-row wx:for="{{productData}}" wx:key="{{index}}" wx:for-index="rowIndex" wx:for-item="rowItem">
         <van-col span="8" class="text-center" wx:for="{{rowItem}}" wx:key="{{item.text}}">
           <navigator url='/pages/productCategory/productCategory'>

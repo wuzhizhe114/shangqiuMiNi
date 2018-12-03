@@ -9,25 +9,33 @@ Page({
     categoryActive:'0',
     productCategory: [
       {
-        picUrl:'shanghu/shushi.png',
-        name:'李三熟食',
-        jiage: '12.5',
+        picUrl: 'index/first_pic2.png',
+        name: '亚亮熟食',
+        jiage: '5.8',
         score: 5,
         addr: '华商大道西段169号附近',
         bodon: -0.5
       },
       {
-        picUrl:'shanghu/huacai.png',
-        name:'阿里菜店',
-        jiage: '12.8',
+        picUrl: 'index/baihuo.jpg',
+        name: '超奎百货商行',
+        jiage: '4.7',
         score: 5,
         addr: '华商大道西段169号附近',
         bodon: 0.3
       },
       {
+        picUrl: 'index/fushi.png',
+        name: '旺角副食店',
+        jiage: '3.6',
+        score: 4,
+        addr: '华商大道西段169号附近',
+        bodon: -0.1
+      },
+      {
         picUrl:'index/guopin.png',
         name: '明明水果店',
-        jiage: '12.5',
+        jiage: '4.5',
         score: 4,
         addr: '华商大道西段169号附近',
         bodon: -0.3
@@ -35,27 +43,12 @@ Page({
       {
         picUrl:'index/roulei.png',
         name: '银花生鲜肉店',
-        jiage: '10.2',
+        jiage: '4.1',
         score: 4,
         addr: '华商大道西段169号附近',
         bodon: 0.3
       },
-      {
-        picUrl:'index/fushi.png',
-        name: '旺角副食店',
-        jiage: '8.5',
-        score: 4,
-        addr: '华商大道西段169号附近',
-        bodon: -0.1
-      },
-      {
-        picUrl:'index/shucai.png',
-        name: '超奎百货商行',
-        jiage: '6.8',
-        score: 3,
-        addr: '华商大道西段169号附近',
-        bodon: 0.3
-      },
+      
     ]
   },
   changeCategoryActive(e){

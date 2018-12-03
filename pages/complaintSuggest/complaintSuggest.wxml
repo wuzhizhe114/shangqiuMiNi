@@ -43,7 +43,7 @@
       </view>
       <navigator hover-class='none' url="/pages/onlineComplaint/onlineComplaint">
         <van-button>
-          <text class='iconfont icon-kefu'></text>在线投诉</van-button>
+          <text class='iconfont icon-kefu'></text>在线调解</van-button>
       </navigator>
     </view>
   </view>

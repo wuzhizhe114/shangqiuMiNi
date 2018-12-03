@@ -89,7 +89,7 @@
             <view class='item-pic pr'>
               <image src='{{picHost}}shanghu/huacai.png'></image>
               <view class='block-mask color-white pd-lr-20 text-ell'>
-                <text>粒大饱满，美味健康！</text>
+                <text>清甜爽脆，爆炒极佳！</text>
               </view>
             </view>
             <view class='item-info'>
@@ -110,7 +110,7 @@
             <view class='item-pic pr gray-border'>
               <image src='{{picHost}}shanghu/nangua.png'></image>
               <view class='block-mask color-white pd-lr-20 text-ell'>
-                <text>粒大饱满，美味健康！</text>
+                <text>软糯粉嫩，香甜美味！</text>
               </view>
             </view>
             <view class='item-info'>
@@ -131,7 +131,7 @@
             <view class='item-pic pr'>
               <image src='{{picHost}}shanghu/tudou.png'></image>
               <view class='block-mask color-white pd-lr-20 text-ell'>
-                <text>粒大饱满，美味健康！</text>
+                <text>果实饱满，肉质肥厚</text>
               </view>
             </view>
             <view class='item-info'>
@@ -157,8 +157,8 @@
         <text class='color-gray ml-24 d-fl al-center'>已选(3)</text>
       </view>
       <view class='d-fl'>
-        <text class='color-red fs-32 d-fl al-center'>¥ 19.5</text>
-        <van-button type='primary' class='ml-24'>预算</van-button>
+        <van-button type='primary'>预计花费</van-button>
+        <text class='color-red fs-32 d-fl al-center ml-24'>¥ 19.5</text>
       </view>
     </view>
   </view>

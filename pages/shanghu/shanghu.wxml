@@ -7,7 +7,7 @@
       <view class='of-x-scroll pr'>
         <view class='scroll-box'>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/first_pic.png'></image>
+            <image src='{{picHost}}index/first_pic2.png'></image>
           </view>
           <view class='shanghu-item ml-24 pr'>
             <image src='{{picHost}}index/second_pic.png'></image>
@@ -16,10 +16,10 @@
             <image src='{{picHost}}index/third_pic.png'></image>
           </view>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/qiandama.png'></image>
+            <image src='{{picHost}}index/baihuo.jpg'></image>
           </view>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/fushi.png'></image>
+            <image src='{{picHost}}index/qiandama.png'></image>
           </view>
           <navigator class='shanghu-item ml-24 pr' url='shanghuRanking'>
             <image src='{{picHost}}shanghu/paihang.png'></image>
