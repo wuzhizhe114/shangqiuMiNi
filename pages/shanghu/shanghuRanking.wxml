@@ -3,7 +3,7 @@
   <p-header></p-header>
   <view class='main fl-1 mb-0 bg-white'>
     <view class='ranking-box'>
-      <view class='lh-72 text-center'>2018上半年第三方信用卡APP排行榜
+      <view class='lh-72 text-center'>2018年商户信用排行榜
         <text class='iconfont icon-paihang theme-color'></text>
       </view>
       <view class='ranking-header d-fl text-center fs-24 pd-lr-30'>

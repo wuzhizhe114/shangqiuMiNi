@@ -157,7 +157,7 @@
         <text class='color-gray ml-24 d-fl al-center'>已选(3)</text>
       </view>
       <view class='d-fl'>
-        <van-button type='primary'>预计花费</van-button>
+        <van-button type='primary'>总价</van-button>
         <text class='color-red fs-32 d-fl al-center ml-24'>¥ 19.5</text>
       </view>
     </view>

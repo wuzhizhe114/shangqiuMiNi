@@ -1,30 +1,30 @@
 <!--component/pFooter/pFooter.wxml-->
 <view class='p-footer d-fl'>
-  <navigator hover-class='none' url='{{footerActive === "0" ? "" : "/pages/index/index"}}'>
+  <navigator open-type="redirect" hover-class='none' url='/pages/index/index'>
     <button hover-class='hover-active' data-index='0' bindtap="changeItem" class='d-fl fl-col {{footerActive === "0" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "0" ? "icon-yemian-copy" : "icon-shouye" }}'></text>
       <text>首页</text>
     </button>
   </navigator>
-  <navigator hover-class='none' url='{{footerActive === "1" ? "" : "/pages/shanghu/shanghu"}}'>
+  <navigator open-type="redirect" hover-class='none' url='/pages/shanghu/shanghu'>
     <button hover-class='hover-active' data-index='1' bindtap="changeItem" class='d-fl fl-col {{footerActive === "1" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "1" ? "icon-shanghu" : "icon-shanghu1" }}'></text>
       <text>商户</text>
     </button>
   </navigator>
-  <navigator hover-class='none' url='{{footerActive === "2" ? "" : "/pages/yaoyiyao/yaoyiyao"}}'>
+  <navigator hover-class='none' url='/pages/yaoyiyao/yaoyiyao'>
     <button hover-class='hover-active' data-index='2' bindtap="changeItem" class='d-fl fl-col yaoyiyao {{footerActive === "2" ? "active" : "" }}'>
       <text class='iconfont icon-yaoyiyao'></text>
       <text>摇一摇</text>
     </button>
   </navigator>
-  <navigator hover-class='none' url='{{footerActive === "3" ? "" : "/pages/cailanzi/cailanzi"}}'>
+  <navigator open-type="redirect" hover-class='none' url='/pages/cailanzi/cailanzi'>
     <button hover-class='hover-active' data-index='3' bindtap="changeItem" class='d-fl fl-col {{footerActive === "3" ? "active" : "" }}'>
-      <text class='iconfont {{footerActive === "3" ? "icon-gouwuche1" : "icon-gouwuche" }}'></text>
+      <text class='iconfont {{footerActive === "3" ? "icon-jisuanqi" : "icon-jisuanqi1" }}'></text>
       <text>菜篮子</text>
     </button>
   </navigator>
-  <navigator hover-class='none' url='{{footerActive === "4" ? "" : "/pages/geren/geren"}}'>
+  <navigator open-type="redirect" hover-class='none' url='/pages/geren/geren'>
     <button hover-class='hover-active' data-index='4' bindtap="changeItem" class='d-fl fl-col {{footerActive === "4" ? "active" : "" }}'>
       <text class='iconfont {{footerActive === "4" ? "icon-geren1" : "icon-geren" }}'></text>
       <text>个人</text>

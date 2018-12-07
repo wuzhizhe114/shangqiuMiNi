@@ -213,6 +213,9 @@
 }
 
 /* 外边距 */
+.m-tb-30 {
+  margin: 30rpx 0;
+}
 
 .mr-66 {
   margin-right: 66rpx;
@@ -254,6 +257,9 @@
 
 .mb-10 {
   margin-bottom: 10rpx;
+}
+.mb-6 {
+  margin-bottom: 6rpx;
 }
 
 .mb-0 {
@@ -326,6 +332,9 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.text-in {
+  text-indent: 2em;
+}
 
 /* flex 自适应 */
 
@@ -335,6 +344,9 @@
 
 .al-center {
   align-items: center;
+}
+.al-end {
+  align-items: flex-end
 }
 
 .jc-center {

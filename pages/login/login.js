@@ -1,12 +1,11 @@
-// pages/creditFile/creditFile1.js
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    picHost: 'https://clueless.gitee.io/shangqiuimages/',
-    active: 0
+
   },
 
   /**

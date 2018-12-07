@@ -55,13 +55,13 @@
     <view class='other-default' hidden='{{!(otherActive === "0")}}'>
       <view class='zhizhao-box bg-white box-sh pd-lr-30 mb-20'>
         <view class='text-center lh-72 theme-color fs-32'>资质牌照</view>
-        <view class='d-fl'>
+        <view class='d-fl al-end'>
           <view class='fl-1 text-center pd-tb-26'>
-            <image src='{{picHost}}shanghu/zhizhao2.png' class='zhizhao-pic gray-border'></image>
-            <view class='fs-22'>个体户工商营业执照</view>
+            <image src='{{picHost}}shanghu/zhizhao1.png' class='zhizhao-pic' style='height:180rpx'></image>
+            <view class='fs-22'>工商营业执照</view>
           </view>
           <view class='fl-1 text-center pd-tb-26'>
-            <image src='{{picHost}}shanghu/zhizhao1.png' class='zhizhao-pic gray-border'></image>
+            <image src='{{picHost}}shanghu/zhizhao2.png' class='zhizhao-pic gray-border'></image>
             <view class='fs-22'>食品流通许可证</view>
           </view>
         </view>
@@ -75,11 +75,12 @@
       </view>
       <view class='product-recom bg-white pd-lr-30 of-hidden'>
         <view class='nav'>
-          <text data-active="0" class='{{productRecomActive === "0" ? "theme-color" : ""}}' catchtap='changeProductActive'>推荐</text>
-          <text data-active="1" class='{{productRecomActive === "1" ? "theme-color" : ""}}' catchtap='changeProductActive'>蔬菜</text>
-          <text data-active="2" class='{{productRecomActive === "2" ? "theme-color" : ""}}' catchtap='changeProductActive'>果品</text>
-          <text data-active="3" class='{{productRecomActive === "3" ? "theme-color" : ""}}' catchtap='changeProductActive'>菌类</text>
-          <text data-active="4" class='{{productRecomActive === "4" ? "theme-color" : ""}}' catchtap='changeProductActive'>禽蛋</text>
+          <text data-active="0" class='{{productRecomActive === "0" ? "theme-color" : ""}}' catchtap='changeProductActive'>人气</text>
+          <text data-active="1" class='{{productRecomActive === "1" ? "theme-color" : ""}}' catchtap='changeProductActive'>促销</text>
+          <text data-active="2" class='{{productRecomActive === "2" ? "theme-color" : ""}}' catchtap='changeProductActive'>蔬菜</text>
+          <text data-active="3" class='{{productRecomActive === "3" ? "theme-color" : ""}}' catchtap='changeProductActive'>果品</text>
+          <text data-active="4" class='{{productRecomActive === "4" ? "theme-color" : ""}}' catchtap='changeProductActive'>菌类</text>
+          <text data-active="5" class='{{productRecomActive === "5" ? "theme-color" : ""}}' catchtap='changeProductActive'>禽蛋</text>
         </view>
         <view class='product-list'>
           <navigator url='/pages/productIntro/productIntro' class='item d-fl pd-tb-26 theme-b-b pr' hover-class='block-active' wx:for="{{productListData}}" wx:key="{{index}}">
@@ -87,7 +88,10 @@
             <view class='fl-1 ml-24'>
               <view class='d-fl mb-10'>
                 <text class='fl-1'>{{item.name}}</text>
-                <text class='color-red'>{{item.jiage}}元/斤</text>
+                <view>
+                  <text class='color-gray fs-22 mr-10' hidden="{{ !item.yuanjia}}" style='text-decoration:line-through;'>¥{{item.yuanjia}}</text>
+                  <text class='color-red'>{{item.jiage}}元/斤</text>
+                </view>
               </view>
               <view class='d-fl mb-10 fs-24'>
                 <text class='fl-1'>分类：{{item.type}}</text>

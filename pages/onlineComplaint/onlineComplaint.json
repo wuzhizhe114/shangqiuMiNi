@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "在线调解",
+  "navigationBarTitleText": "纠纷调解",
   "usingComponents": {
     "p-header": "/component/pHeader/pHeader",
     "van-button": "vant-weapp/button/index"

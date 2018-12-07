@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "信用排行",
+  "navigationBarTitleText": "信用排行榜",
   "usingComponents": {
     "p-header": "/component/pHeader/pHeader",
     "van-button": "vant-weapp/button/index"

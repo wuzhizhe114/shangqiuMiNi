@@ -193,10 +193,11 @@
             </view>
           </view>
         </view>
-        <view class='show-more text-center color-gray d-fl fl-col mb-26 pr' hover-class='hover-active'>
+        <!-- <navigator></navigator> -->
+        <navigator class='show-more text-center color-gray d-fl fl-col mb-26 pr' url='/pages/shanghu/shanghuRanking'>
           <view class='fl-1'>查看更多</view>
           <text class='iconfont icon-xiangxia fl-1'></text>
-        </view>
+        </navigator>
       </view>
     </view>
     <!-- 信用商品 -->

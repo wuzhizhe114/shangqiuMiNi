@@ -1,66 +1,144 @@
-<!--pages/creditFile/creditFile.wxml-->
+<!--pages/creditFile/creditFile1.wxml-->
 <view class='container'>
-  <view class='main fl-1 mb-0 credit-file'>
-    <view class='basic-info d-fl pd-30 bg-white box-sh mb-20'>
-      <view class='left text-right gray-border'>
-        <view class='item theme-b-b'>企业名称：</view>
-        <view class='pl-20 item theme-b-b'>统一社会信用代码：</view>
-        <view class='item theme-b-b'>经营者：</view>
-        <view class='item theme-b-b'>注册地址：</view>
-        <view class='item theme-b-b'>注册日期：</view>
-        <view class='item theme-b-b'>信用等级：</view>
-        <view class='item theme-b-b'>当前排名：</view>
-        <view class='item theme-b-b'>经营范围：</view>
-        <view>商户位置：</view>
-      </view>
-      <view class='right fl-1 gray-border'>
-        <view class='pl-20 item theme-b-b'>李记熟食</view>
-        <view class='pl-20 item theme-b-b'>914403000870397751</view>
-        <view class='pl-20 item theme-b-b'>李元霸</view>
-        <view class='pl-20 item theme-b-b'>商丘市睢阳区</view>
-        <view class='pl-20 item theme-b-b'>2016年3月21日</view>
-        <view class='pl-20 item theme-b-b theme-color'>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-          <text class='iconfont icon-stars'></text>
-        </view>
-        <view class='pl-20 item theme-b-b'>第 1 名</view>
-        <view class='pl-20 item theme-b-b'>蔬菜、果品、副食</view>
-        <view class='pl-20'>3楼301号</view>
-      </view>
-    </view>
-    <view class='market-score pd-lr-30 box-sh pb-60 mb-20 text-right'>
-      <view class='lh-72 theme-color text-center'>市场经营信用评分</view>
-      <image src='{{picHost}}shanghu/dangan/leidatu.png' class='leida mr-66'></image>
-    </view>
-    <view class='my-credit bg-white box-sh text-center of-hidden mb-20'>
-      <view class='lh-72 theme-color'>我的信用评分走势图</view>
-      <image src='{{picHost}}shanghu/dangan/zexiantu.png' class='zexian'></image>
-    </view>
-    <view class='zige box-sh text-center pd-lr-30 bg-white pb-60'>
-      <view class='lh-72 theme-color'>营业资格证</view>
-      <view class='image-box d-fl fs-24'>
-        <view class='zige1 fl-1 mr-10'>
-          <image src='{{picHost}}/shanghu/dangan/zige1.png'></image>
-          <view>营业执照</view>
-        </view>
-        <view class='fl-1 mr-10'>
-          <image src='{{picHost}}/shanghu/dangan/ziige2.png'></image>
-          <view>食品流通许可证</view>
-        </view>
-        <view class='fl-1'>
-          <image src='{{picHost}}/shanghu/dangan/zige3.png'></image>
-          <view>食品安全许可证</view>
+  <view class='fl-1 pd-30 bg-white'>
+    <view class='basic-info pd-tb-26 d-fl mb-45'>
+      <image src='{{picHost}}index/first_pic2.png' class='pic'></image>
+      <view class='fl-1 ml-24'>
+        <view class='mb-6'>店铺名称：亚亮熟食店</view>
+        <view class='mb-6 fs-24'>经营类别：烧腊</view>
+        <view class='fs-24'>信用等级：
+          <text class='theme-color'>
+            <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-stars"></text>
+          <text class="iconfont fs-28 icon-xingxingxianmiao"></text>
+          </text>
         </view>
       </view>
+      <view class='d-fl jc-center fl-col al-center'>
+        <text class='color-red fs-36' style='font-style:italic;'>98</text>
+        <view class='color-gray'>信用分</view>
+      </view>
     </view>
-    <!-- 底部提示 -->
-    <view class='page-end pd-30 color-gray d-fl al-center'>
-      <text class='line fl-1'></text>
-      <text class='mlr-10'>我是有底线的</text>
-      <text class='line fl-1'></text>
+    <view>
+      <van-tabs active="{{ active }}" line-width="70">
+        <van-tab title="综合分析">
+          <view class='market-score pd-30 pb-60 mb-20 text-right'>
+            <view class='lh-72 theme-color text-center mb-26 fs-32'>市场经营信用评分</view>
+            <image src='{{picHost}}shanghu/dangan/leidatu.png' class='leida mr-66'></image>
+          </view>
+          <view class='my-credit bg-white text-center of-hidden mb-20'>
+            <view class='lh-72 theme-color fs-32 mb-26'>我的信用评分走势图</view>
+            <image src='{{picHost}}shanghu/dangan/zexiantu.png' class='zexian'></image>
+          </view>
+        </van-tab>
+        <van-tab title="基础信息">
+          <view class='m-tb-30'>
+            <view class='mb-6'>企业名称：商丘市亚亮熟食店</view>
+            <view class='mb-6'>社会统一信用代码：91440300870397751</view>
+            <view class='mb-6'>法定代表人：李元霸</view>
+            <view class='mb-6'>注册地址：商丘朝阳区</view>
+            <view class='mb-6'>注册日期：2016年3月21</view>
+          </view>
+          <view class='fs-32 fw-b color-666 mb-45'>经营资格证</view>
+          <view class='d-fl mb-45'>
+            <view class='text-center mr-32'>
+              <image class='mb-10' src='{{picHost}}shanghu/dangan/zige1.png' class='zige-pic zige-pic1'></image>
+              <view>营业执照</view>
+            </view>
+            <view class='text-center'>
+              <image class='mb-10' src='{{picHost}}shanghu/dangan/ziige2.png' class='zige-pic'></image>
+              <view>食品流通许可证</view>
+            </view>
+          </view>
+          <view class='d-fl'>
+            <view class='text-center mr-32'>
+              <image class='mb-10' src='{{picHost}}shanghu/dangan/zige3.png' class='zige-pic'></image>
+              <view>食品安全许可证</view>
+            </view>
+          </view>
+        </van-tab>
+        <van-tab title="身份真实">
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            经营资格证
+          </view>
+          <view class='text-in fs-24'>
+            主要包含经营执照、食品流通许可证、食品安全许可证等资质证明的真实性以及场地租赁合同的真实性等
+          </view>
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            不良记录：(无）
+          </view>
+        </van-tab>
+        <van-tab title="商品可信">
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            商品可信度
+          </view>
+          <view class='text-in color-666'>主要商品来源可信、质量可信、描述可信等标准</view>
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            不良记录：（ 3 ）
+          </view>
+          <view class='table text-center'>
+            <view class='tr d-fl'>
+              <view>序号</view>
+              <view>类别</view>
+              <view style='text-align:center;'>原因</view>
+              <view>记录时间</view>
+            </view>
+            <view class='tr d-fl'>
+              <view>1</view>
+              <view>质量可信</view>
+              <view>凭证假造</view>
+              <view>2017.12.22</view>
+            </view>
+            <view class='tr d-fl'>
+              <view>2</view>
+              <view>来源可信</view>
+              <view>农产物残留超标</view>
+              <view>2018.06.06</view>
+            </view>
+            <view class='tr d-fl'>
+              <view>3</view>
+              <view>质量可信</view>
+              <view>违规使用食品添加剂</view>
+              <view>2018.09.30</view>
+            </view>
+          </view>
+        </van-tab>
+        <van-tab title="消费环境">
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            消费环境
+          </view>
+          <view class='text-in fs-24'>
+            消费环境情况主要包括环境卫生、设施卫生和从业人员卫生等指标
+          </view>
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            不良记录：(无）
+          </view>
+        </van-tab>
+        <van-tab title="管理服务">
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            管理服务
+          </view>
+          <view class='text-in fs-24'>
+           管理服务情况主要包括进货管理、商品陈列、商品包装、制度规范、证照规范、价格规范、计量规范、服务规范等指标
+          </view>
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            不良记录：(无）
+          </view>
+        </van-tab>
+        <van-tab title="合规经营">
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            合规经营
+          </view>
+          <view class='text-in fs-24'>
+           合规经营情况主要包括市场监管、司法执行、其他不良记录等指标。
+          </view>
+          <view class='m-tb-30 fw-b fs-32 color-666'>
+            不良记录：(无）
+          </view>
+        </van-tab>
+      </van-tabs>
     </view>
   </view>
 </view>

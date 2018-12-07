@@ -1,38 +1,65 @@
-/* pages/creditFile/creditFile.wxss */
-.credit-file .basic-info {
-  line-height: 60rpx;
-}
-.credit-file .basic-info .left {
-  background-color: #f1f1f1
-}
-.credit-file .basic-info .item {
-  border-bottom-color: #ddd;
-}
-.credit-file .basic-info .right {
-  background-color: #fdf4e8;
-  border-left: none;
+/* pages/creditFile/creditFile1.wxss */
+
+.basic-info .pic {
+  width: 150rpx;
+  height: 120rpx;
 }
 
-.credit-file .market-score {
+.container .van-tab {
+  background-color: #f29e2e;
+  color: #fff;
+}
+
+.container .market-score {
   background: url('https://clueless.gitee.io/shangqiuimages/shanghu/dangan/leida-bg.png') no-repeat #fff;
   background-size: 100% 100%;
 }
-.credit-file .market-score .leida {
+
+.container .market-score .leida {
   width: 470rpx;
   height: 230rpx;
 }
 
-.credit-file .my-credit .zexian {
+.container .my-credit .zexian {
   width: 520rpx;
   height: 210rpx;
 }
 
-.credit-file .zige .image-box {
-  align-items: flex-end;
-}
-.credit-file .zige .image-box image {
+.container .zige-pic {
+  width: 210rpx;
   height: 140rpx;
 }
-.credit-file .zige .zige1 image {
-  height: 154rpx;
+
+.container .zige-pic1 {
+  height: 160rpx;
+}
+
+
+
+.table .tr > view:first-child {
+  width: 20%;
+}
+
+.table .tr > view:nth-child(2) {
+  width: 25%;
+}
+
+.table .tr > view:nth-child(3) {
+  width: 25%;
+  text-align: left;
+}
+
+.table .tr > view:last-child {
+  width: 30%;
+}
+
+.table .tr {
+  padding: 10rpx 0;
+}
+
+.table .tr:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+.table .tr:nth-child(even) {
+  background-color: #eeeeee;
 }

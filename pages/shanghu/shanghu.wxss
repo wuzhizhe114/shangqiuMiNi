@@ -1,18 +1,20 @@
 /* pages/shanghu/shanghu.wxss */
 /* 商户排行 */
 .shanghu-ranking > .of-x-scroll {
-  height: 160rpx;
+  height: 210rpx;
 }
 .shanghu-ranking .scroll-box {
   position: absolute;
   top: 0;
   left: 0;
   /* height: 100%; */
-  width: 1620rpx;
+  width: 1072rpx;
   overflow: hidden;
 }
 .shanghu-ranking .shanghu-item {
   float: left;
+}
+.shanghu-ranking .shanghu-item .img-box {
   width: 250rpx;
   height: 160rpx;
 }

@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+.body {
+  padding: 200rpx 0 100rpx;
+}

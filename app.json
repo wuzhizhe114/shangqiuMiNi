@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/productCategory/productCategory",
-    "pages/shanghuInfo/shanghuInfo",
     "pages/shanghu/shanghu",
     "pages/cailanzi/cailanzi",
     "pages/geren/geren",
+    "pages/login/login",
     "pages/creditFile/creditFile",
+    "pages/shanghuInfo/shanghuInfo",
+    "pages/productCategory/productCategory",
     "pages/myComplaintInfo/myComplaintInfo",
     "pages/complaintSuggest/complaintSuggest",
     "pages/onlineComplaint/onlineComplaint",

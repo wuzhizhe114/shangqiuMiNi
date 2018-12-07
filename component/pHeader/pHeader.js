@@ -22,6 +22,9 @@ Component({
       wx.scanCode({
         success(res) {
           console.log(res)
+          wx.navigateTo({
+            url: '/pages/shanghuInfo/shanghuInfo',
+          })
         }
       })
     }

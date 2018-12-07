@@ -1,0 +1,7 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <view class='body fl-1'>
+    <view class='lh-72 fs-36 text-center'>消费者</view>
+  </view>
+  <view class='bottom'></view>
+</view>

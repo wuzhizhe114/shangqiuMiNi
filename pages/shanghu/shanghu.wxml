@@ -3,30 +3,57 @@
   <p-header></p-header>
   <view class='main fl-1'>
     <!-- 商户排行 -->
-    <view class='shanghu-ranking pd-30 bg-white box-sh'>
+    <view class='shanghu-ranking pd-lr-30 bg-white box-sh pb-20'>
+      <view class='lh-72 theme-color fs-32 mb-10'> <text class='iconfont icon-remen'></text> 优品促销</view>
       <view class='of-x-scroll pr'>
         <view class='scroll-box'>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/first_pic2.png'></image>
+            <view class='img-box mb-6'>
+              <image src='{{picHost}}shanghu/11.png'></image>
+            </view>
+            <!-- <image src='/images/11.png'></image> -->
+            <view class='d-fl fs-24'>
+              <text class='fl-1'>阿克苏苹果</text>
+              <text>¥6.58</text>
+            </view>
           </view>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/second_pic.png'></image>
+            <view class='img-box mb-6'>
+              <image src='{{picHost}}shanghu/12.png'></image>
+            </view>
+            <view class='d-fl fs-24'>
+              <text class='fl-1'>西州哈密瓜</text>
+              <text>¥4.38</text>
+            </view>
+            <!-- <image src='/images/12.png'></image>             -->
           </view>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/third_pic.png'></image>
+            <view class='img-box mb-6'>
+              <image src='{{picHost}}shanghu/13.png'></image>
+            </view>
+            <view class='d-fl fs-24'>
+              <text class='fl-1'>澳洲牛腱子</text>
+              <text>¥89.9</text>
+            </view>
           </view>
           <view class='shanghu-item ml-24 pr'>
-            <image src='{{picHost}}index/baihuo.jpg'></image>
+           <view class='img-box mb-6'>
+              <image src='{{picHost}}shanghu/14.png'></image>
+            </view>
+            <view class='d-fl fs-24'>
+              <text class='fl-1'>久红瑞哈密瓜</text>
+              <text>¥1.75</text>
+            </view>
           </view>
-          <view class='shanghu-item ml-24 pr'>
+          <!-- <view class='shanghu-item ml-24 pr'>
             <image src='{{picHost}}index/qiandama.png'></image>
-          </view>
-          <navigator class='shanghu-item ml-24 pr' url='shanghuRanking'>
+          </view> -->
+          <!-- <navigator class='shanghu-item ml-24 pr' url='shanghuRanking'>
             <image src='{{picHost}}shanghu/paihang.png'></image>
             <view class='item-tip d-fl al-center'>
               <text>更多排行 ></text>
             </view>
-          </navigator>
+          </navigator> -->
         </view>
       </view>
     </view>
