@@ -1,7 +1,20 @@
 <!--pages/login/login.wxml-->
 <view class='container'>
-  <view class='body fl-1'>
-    <view class='lh-72 fs-36 text-center'>消费者</view>
+  <view class='form'>
+    <view class='input-box-line'>
+      <text class='iconfont icon-guanjiaowangtubiao01 theme-color fs-36'></text>
+      <input class='input' placeholder-class='ph-color' type='number' placeholder='请输入手机号'></input>
+      <!-- <text class='iconfont icon-close1 fs-36 color-gray'></text> -->
+    </view>
+    <view class='input-box-line'>
+      <text class='iconfont icon-yanzhengma theme-color fs-36'></text>
+      <input class='input' placeholder-class='ph-color' type='number' placeholder='请输入验证码'></input>
+      <van-button type="primary" class='mini'>获取验证码</van-button>
+    </view>
   </view>
-  <view class='bottom'></view>
+  <view class='btn-box pd-lr-30'>
+    <navigator hover-class='none' open-type='redirect' url='/pages/index/index'>
+      <van-button block="{{true}}" type="primary">登录</van-button>
+    </navigator>
+  </view>
 </view>

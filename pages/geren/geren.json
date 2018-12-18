@@ -2,6 +2,7 @@
   "navigationBarTitleText": "个人",  
   "usingComponents": {
     "p-footer": "/component/pFooter/pFooter",
+    "van-button": "vant-weapp/button/index",
     "van-popup": "vant-weapp/popup/index"
   }
 }

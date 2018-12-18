@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/login/login",
+    "pages/geren/geren",
+    "pages/welcome/welcome",
     "pages/index/index",
     "pages/shanghu/shanghu",
     "pages/cailanzi/cailanzi",
-    "pages/geren/geren",
-    "pages/login/login",
     "pages/creditFile/creditFile",
     "pages/shanghuInfo/shanghuInfo",
     "pages/productCategory/productCategory",

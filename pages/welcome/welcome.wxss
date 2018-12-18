@@ -1,0 +1,19 @@
+/* pages/welcome/welcome.wxss */
+.container {
+  background-image: url('https://clueless.gitee.io/shangqiuimages/index/welcome-bg.png');
+  background-size: 100% 100%;
+}
+.index-tips {
+  position: absolute;
+  width: 70rpx;
+  height: 48rpx;
+  right: -70rpx;
+  top: 0;
+  line-height: 40rpx;
+  background-image: url('https://clueless.gitee.io/shangqiuimages/index/tips-bg.png');
+  background-size: 100% 100%;
+}
+
+.btn-box {
+  width: 100%;
+}

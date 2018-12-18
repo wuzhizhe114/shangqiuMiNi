@@ -1,4 +1,31 @@
 /* pages/login/login.wxss */
-.body {
-  padding: 200rpx 0 100rpx;
+.form {
+  padding: 100rpx;
+  margin-bottom: 80rpx;
+}
+.container .mini .van-button {
+  margin: 0 -10rpx 4rpx 0;
+}
+
+/* 左右两边有按钮 只有下边框的输入框 */
+
+.input-box-line {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #b2b2b2;
+  padding: 0 10rpx;
+  margin-bottom: 28rpx;
+}
+
+.input-box-line .input {
+  flex: 1;
+  padding-left: 32rpx;
+  height: 56rpx;
+}
+
+
+.mini .van-button--normal {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
 }

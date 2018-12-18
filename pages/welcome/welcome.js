@@ -1,6 +1,4 @@
-// pages/login/login.js
-import Notify from 'vant-weapp/notify/notify';
-
+// pages/welcome/welcome.js
 Page({
 
   /**

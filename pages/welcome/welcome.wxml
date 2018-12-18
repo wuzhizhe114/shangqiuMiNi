@@ -1,0 +1,24 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <view class='fl-1 d-fl al-center jc-center'>
+    <view class='text-center'>
+      <view class='fs-58 mb-20 pr color-666'>雪苑农贸市场
+        <text class='index-tips fs-24 color-white'>消费</text>
+      </view>
+      <view>智慧城市诚信服务平台</view>
+    </view>
+  </view>
+  <view class='fl-1 d-fl al-center'>
+    <view class='btn-box pd-lr-30'>
+      <view class='mb-35'>
+        <van-button block="{{true}}" plain>微信授权登录</van-button>
+      </view>
+      <navigator url='/pages/login/login' hover-class='none' class='mb-35'>
+        <van-button block="{{true}}" type="primary">手机验证码登录</van-button>
+      </navigator>
+      <view class='fs-22 theme-color text-center'>
+        <text>登录即代表同意用户协议</text>
+      </view>
+    </view>
+  </view>
+</view>

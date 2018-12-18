@@ -4,6 +4,9 @@
   background: url('https://clueless.gitee.io/shangqiuimages/geren/geren-bg.png') no-repeat;
   background-size: cover;
 }
+.user-info .van-button {
+  display: inline-block;
+}
 .user-info .user-icon {
   width: 140rpx;
   height: 140rpx;
